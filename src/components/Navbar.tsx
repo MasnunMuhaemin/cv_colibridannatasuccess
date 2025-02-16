@@ -13,29 +13,40 @@ const Navbar = () => {
     <section>
       <div
         id="nav"
-        className="font1 w-full backdrop-blur-lg bg-primary/50 shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 max-w-screen-xl mx-auto"
+        className="font1 w-full backdrop-blur-lg shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 xl:px-20 2xl:px-32 max-w-screen-2xl mx-auto"
       >
         <div className="flex items-center gap-3">
-          <h1 className="font-bold whitespace-nowrap text-black lg:text-3xl text-2xl">
+          <h1 className="font-bold whitespace-nowrap text-black lg:text-2xl text-2xl">
             Colibri Dannata Success
           </h1>
         </div>
 
         {/* Menu untuk Desktop */}
         <div className="hidden lg:flex items-center gap-6 text-black font-semibold">
-          {[
-            "Beranda",
-            "Tentang Kami",
-            "Produk",
-            "Keunggulan",
-            "Spesifikasi",
-            "Kontak",
-          ].map((menu, index) => (
-            <NavLink key={index} to="/" className="relative group text-lg">
-              {menu}
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-            </NavLink>
-          ))}
+          <NavLink to="/" className="relative group text-lg">
+            Beranda
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
+          <NavLink to="/" className="relative group text-lg">
+            Tentang Kami
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
+          <NavLink to="/" className="relative group text-lg">
+            Produk
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
+          <NavLink to="/" className="relative group text-lg">
+            Keunggulan
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
+          <NavLink to="/" className="relative group text-lg">
+            Spesifikasi
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
+          <NavLink to="/" className="relative group text-lg">
+            Kontak
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+          </NavLink>
         </div>
 
         {/* Menu untuk Mobile */}
@@ -65,24 +76,54 @@ const Navbar = () => {
               <IconX size={32} />
             </button>
             <div className="flex flex-col justify-center items-center gap-6 text-xl font-semibold">
-              {[
-                "Beranda",
-                "Tentang Kami",
-                "Produk",
-                "Keunggulan",
-                "Spesifikasi",
-                "Kontak",
-              ].map((menu, index) => (
-                <NavLink
-                  key={index}
-                  to="/"
-                  onClick={openMenu}
-                  className="relative group text-zinc-800"
-                >
-                  {menu}
-                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-                </NavLink>
-              ))}
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Beranda
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Tentang Kami
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Produk
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Keunggulan
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Spesifikasi
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
+              <NavLink
+                to="/"
+                onClick={openMenu}
+                className="relative group text-zinc-800"
+              >
+                Kontak
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
+              </NavLink>
             </div>
           </div>
         </div>
