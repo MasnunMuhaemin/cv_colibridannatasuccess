@@ -1,9 +1,9 @@
-// import { Header } from "../sections";
+import { Content} from "../sections";
 
 const Home = () => {
     return (
-      <div className="overflow-x-hidden">
-        {/* <Header /> */}
+      <div className="">
+        <Content />
       </div>
     );
   };
