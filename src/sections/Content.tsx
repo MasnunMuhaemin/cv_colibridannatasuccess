@@ -40,14 +40,14 @@ const Content = () => {
           </div>
           {/* Kanan: Layanan */}
           <div className="text-black space-y-6 w-full">
-            <h2 className="text-xl md:text-2xl font-bold text-sm md:text-base">
+            <h2 className="text-xl md:text-2xl font-bold">
               Layanan Kami
             </h2>
             <div className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full">
               <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
                 <IconHome stroke={2} />
               </div>
-              <p className="text-base md:text-lg">
+              <p className="text-sm md:text-lg">
                 Jasa pekerjaan Roofing dan Waterproofing
               </p>
             </div>
@@ -55,7 +55,7 @@ const Content = () => {
               <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
                 <IconCrane stroke={2} />
               </div>
-              <p className="text-base md:text-lg">
+              <p className="text-sm md:text-lg">
                 Pemasangan Rangka Baja Berat dan Rangka Baja Ringan
               </p>
             </div>
@@ -63,7 +63,7 @@ const Content = () => {
               <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
                 <IconBuildings stroke={2} />
               </div>
-              <p className="text-base md:text-lg">
+              <p className="text-sm md:text-lg">
                 Distributor / Supplier Atap
               </p>
             </div>
