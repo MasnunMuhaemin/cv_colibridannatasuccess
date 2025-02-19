@@ -1,9 +1,10 @@
-import { Content } from "../sections";
+import { Content,Header } from "../sections";
 import { Card, Membran } from "../components";
 
 const Home = () => {
     return (
-      <div className="">
+      <div className="mt-20">
+        <Header />
         <Content />
         <Card />
         <Membran />

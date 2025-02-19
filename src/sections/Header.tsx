@@ -30,13 +30,13 @@ const Header = () => {
   };
 
   return (
-    <div className="relative w-screen h-[calc(100vh-90px)] flex items-center justify-center mt-0 md:mt-12">
+    <div className="relative w-screen h-[250px] md:h-screen flex items-center justify-center">
       {/* Container untuk Gambar */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-full object-contain md:object-fill transition-all duration-700"
+          className="w-full h-[250px] md:h-full object-fill transition-all duration-700"
         />
       </div>
 
