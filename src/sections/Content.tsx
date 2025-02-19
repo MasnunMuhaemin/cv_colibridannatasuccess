@@ -98,7 +98,7 @@ const Content = () => {
           </div>
           {/* Gambar */}
           <div className="flex justify-center">
-            <img src="/images/PRODUK/CTI/CTIBrosur6.jpg" alt="" />
+            <img className="rounded-lg" src="/images/Galeri/kantor.jpeg" alt="" />
           </div>
         </div>
 
@@ -106,7 +106,7 @@ const Content = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Gambar */}
           <div className="flex justify-center">
-            <img src="/images/PRODUK/CTI/human.png" alt="" />
+            <img className="rounded-lg" src="/images/Galeri/human.png" alt="" />
           </div>
           {/* Teks Human Capital */}
           <div className="flex flex-col space-y-6">
