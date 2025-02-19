@@ -1,5 +1,5 @@
 import {Route,  BrowserRouter as Router, Routes } from 'react-router-dom'
-import { Navbar } from './components'
+import { Navbar, Footer } from './components'
 import { Header } from './sections'
 import { Home } from './pages'
 
@@ -13,6 +13,7 @@ function App() {
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )
