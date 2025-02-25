@@ -1,5 +1,5 @@
 import { Content,Header } from "../sections";
-import { Card, Membran, Tamco, GAF, Owen, Tegola, Firescreen } from "../components";
+import { Card, Membran, Tamco, GAF, Owen, Tegola, Firescreen, BSK } from "../components";
 
 const Home = () => {
     return (
@@ -13,6 +13,7 @@ const Home = () => {
         <Owen />
         <Tegola />
         <Firescreen />
+        <BSK />
       </div>
     );
   };
