@@ -5,63 +5,63 @@ const products = [
   {
     id: 1,
     image: "/images/OWEN/Classicsuper/asiangreen.jpg",
-    name: "Asian Green",
+    name: "Classic Super Asian Green",
   },
-  { id: 2, image: "/images/OWEN/Classicsuper/asianred.jpg", name: "Asian Red" },
+  { id: 2, image: "/images/OWEN/Classicsuper/asianred.jpg", name: "Classic Super Asian Red" },
   {
     id: 3,
     image: "/images/OWEN/Classicsuper/barkbrown.jpg",
-    name: "Bark Brown",
+    name: "Classic Super Bark Brown",
   },
   {
     id: 4,
     image: "/images/OWEN/Classicsuper/brownwood.jpg",
-    name: "Brown Wood",
+    name: "Classic Super Brown Wood",
   },
   {
     id: 5,
     image: "/images/OWEN/Classicsuper/deserttan.jpg",
-    name: "Desert Tan",
+    name: "Classic Super Desert Tan",
   },
   {
     id: 6,
     image: "/images/OWEN/Classicsuper/estategrey.jpg",
-    name: "Estate Grey",
+    name: "Classic Super Estate Grey",
   },
   {
     id: 7,
     image: "/images/OWEN/Classicsuper/onyxblack.jpg",
-    name: "Onyx Black",
+    name: "Classic Super Onyx Black",
   },
   {
     id: 8,
     image: "/images/OWEN/Classicsuper/terracotablend.jpg",
-    name: "Terra Cota Blend",
+    name: "Classic Super Terra Cota Blend",
   },
   {
     id: 9,
     image: "/images/OWEN/Oakridgesuper/asianred.jpg",
-    name: "Asian Red",
+    name: "Oak Ridge Super Asian Red",
   },
   {
     id: 10,
     image: "/images/OWEN/Oakridgesuper/brownwood.jpg",
-    name: "Brown Wood",
+    name: "Oak Ridge Super Brown Wood",
   },
   {
     id: 11,
     image: "/images/OWEN/Oakridgesuper/estategrey.jpg",
-    name: "Estate Grey",
+    name: "Oak Ridge Super Estate Grey",
   },
   {
     id: 12,
     image: "/images/OWEN/Oakridgesuper/harborblack.jpg",
-    name: "Harvor Black",
+    name: "Oak Ridge Super Harvor Black",
   },
   {
     id: 13,
     image: "/images/OWEN/Oakridgesuper/onyxxblack.jpg",
-    name: "Onyx Black",
+    name: "Oak Ridge Super Onyx Black",
   },
 ];
 

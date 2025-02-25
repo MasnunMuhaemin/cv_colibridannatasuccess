@@ -122,6 +122,66 @@ const products = [
     image: "/images/TEGOLA/Ecoroofpremium/Premiumtraditional/Slategrey.jpg",
     name: "Eco Roof Premium Slate Grey",
   },
+  {
+    id: 25,
+    image: "/images/TEGOLA/ShinglesRectanguler/Blackrectangular.jpg",
+    name: "Shingles Rectanguler Black Rectanguler",
+  },
+  {
+    id: 26,
+    image: "/images/TEGOLA/ShinglesRectanguler/Blacktraditional.jpg",
+    name: "Shingles Rectanguler Black Traditional",
+  },
+  {
+    id: 27,
+    image: "/images/TEGOLA/ShinglesRectanguler/Purpleredrectangular.jpg",
+    name: "Shingles Rectanguler Purple Red Rectangular",
+  },
+  {
+    id: 28,
+    image: "/images/TEGOLA/ShinglesRectanguler/Shadedbrownrectangular.jpg",
+    name: "Shingles Rectanguler Shaded Brown Rectangular",
+  },
+  {
+    id: 29,
+    image: "/images/TEGOLA/ShinglesRectanguler/Shadedbrowntraditional.jpg",
+    name: "Shingles Rectanguler Shaded Brown Traditional",
+  },
+  {
+    id: 30,
+    image: "/images/TEGOLA/ShinglesRectanguler/Shadedgreenrectangular.jpg",
+    name: "Shingles Rectanguler Shaded Green Rectangular",
+  },
+  {
+    id: 31,
+    image: "/images/TEGOLA/ShinglesRectanguler/Shadedgreentraditional.jpg",
+    name: "Shingles Rectanguler Shaded Green Traditional",
+  },
+  {
+    id: 32,
+    image: "/images/TEGOLA/ShinglesRectanguler/Shadedredrectangular.jpg",
+    name: "Shingles Rectanguler Shaded Red Rectangular",
+  },
+  {
+    id: 33,
+    image: "/images/TEGOLA/ShinglesRectanguler/Slategreyrectangular.jpg",
+    name: "Shingles Rectanguler Slate Grey Rectangular",
+  },
+  {
+    id: 34,
+    image: "/images/TEGOLA/ShinglesRectanguler/Slategreytraditional.jpg",
+    name: "Shingles Rectanguler Slate Grey Traditional",
+  },
+  {
+    id: 35,
+    image: "/images/TEGOLA/ShinglesRectanguler/Terracotatraditional.jpg",
+    name: "Shingles Rectanguler Teracota Traditional",
+  },
+  {
+    id: 36,
+    image: "/images/TEGOLA/ShinglesRectanguler/Uniredtraditional.jpg",
+    name: "Shingles Rectanguler Unired Traditional",
+  },
 ];
 
 const Tegola = () => {

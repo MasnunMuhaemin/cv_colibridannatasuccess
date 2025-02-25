@@ -5,63 +5,63 @@ const products = [
   {
     id: 1,
     image: "/images/TAMCO/Eliteglass/antiqueslate.jpg",
-    name: "Antique Slate",
+    name: "Elite Glass Antique Slate",
   },
   {
     id: 2,
     image: "/images/TAMCO/Eliteglass/greenblend.jpg",
-    name: "Green Blend",
+    name: "Elite Glass Green Blend",
   },
   {
     id: 3,
     image: "/images/TAMCO/Eliteglass/rusticblack.jpg",
-    name: "Rustic Black",
+    name: "Elite Glass Rustic Black",
   },
   {
     id: 4,
     image: "/images/TAMCO/Eliteglass/rusticredwood.jpg",
-    name: "Rustic Red Wood",
+    name: "Elite Glass Rustic Red Wood",
   },
   {
     id: 5,
     image: "/images/TAMCO/Eliteglass/rusticcedar.jpg",
-    name: "Rustic Cedar",
+    name: "Elite Glass Rustic Cedar",
   },
-  { id: 6, image: "/images/TAMCO/Eliteglass/tilered.jpg", name: "Tile Red" },
+  { id: 6, image: "/images/TAMCO/Eliteglass/tilered.jpg", name: "Elite Glass Tile Red" },
   {
     id: 7,
     image: "/images/TAMCO/Eliteglass/tweedblend.jpg",
-    name: "Tweed Blend",
+    name: "Elite Glass Tweed Blend",
   },
   {
     id: 8,
     image: "/images/TAMCO/Eliteglass/weatheredwood.jpg",
-    name: "Weather Red Wood",
+    name: "Elite Glass Weather Red Wood",
   },
   {
     id: 9,
     image: "/images/TAMCO/Heritage/auntmnbrown.jpg",
-    name: "Auntumn Brown",
+    name: "Heritage Auntumn Brown",
   },
   {
     id: 10,
     image: "/images/TAMCO/Heritage/rusticblack.jpg",
-    name: "Rustiic Black",
+    name: "Heritage Rustiic Black",
   },
   {
     id: 11,
     image: "/images/TAMCO/Heritage/rusticredwood.jpg",
-    name: "Rustic Red",
+    name: "Heritage Rustic Red",
   },
   {
     id: 12,
     image: "/images/TAMCO/Heritage/slatetonegrey.jpg",
-    name: "Slateton Grey",
+    name: "Heritage Slateton Grey",
   },
   {
     id: 13,
     image: "/images/TAMCO/Heritage/thunderstormgrey.jpg",
-    name: "Thunder Storm Grey",
+    name: "Heritage Thunder Storm Grey",
   },
 ];
 
