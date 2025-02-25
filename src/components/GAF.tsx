@@ -40,9 +40,9 @@ const GAF = () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/GAF/logo.png"
+            src="/images/GAF/GAF.png"
             alt="Logo GAF"
-            className="w-20 md:w-28 h-auto"
+            className="w-20 md:w-28 h-16"
           />
           <div>
             <h4 className="text-md font-semibold">Atap GAF</h4>
