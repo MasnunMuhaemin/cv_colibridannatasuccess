@@ -1,5 +1,5 @@
 import { Content,Header } from "../sections";
-import { Card, Membran, Tamco } from "../components";
+import { Card, GAF, Membran, Tamco } from "../components";
 
 const Home = () => {
     return (
@@ -9,6 +9,7 @@ const Home = () => {
         <Card />
         <Membran />
         <Tamco />
+        <GAF />
       </div>
     );
   };
