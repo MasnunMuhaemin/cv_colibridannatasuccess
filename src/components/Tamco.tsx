@@ -2,22 +2,70 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/TAMCO/Eliteglass/antiqueslate.jpg", name: "Antique Slate" },
-  { id: 2, image: "/images/TAMCO/Eliteglass/greenblend.jpg", name: "Green Blend" },
-  { id: 3, image: "/images/TAMCO/Eliteglass/rusticblack.jpg", name: "Rustic Black" },
-  { id: 4, image: "/images/TAMCO/Eliteglass/rusticredwood.jpg", name: "Rustic Red Wood" },
-  { id: 5, image: "/images/TAMCO/Eliteglass/rusticcedar.jpg", name: "Rustic Cedar" },
+  {
+    id: 1,
+    image: "/images/TAMCO/Eliteglass/antiqueslate.jpg",
+    name: "Antique Slate",
+  },
+  {
+    id: 2,
+    image: "/images/TAMCO/Eliteglass/greenblend.jpg",
+    name: "Green Blend",
+  },
+  {
+    id: 3,
+    image: "/images/TAMCO/Eliteglass/rusticblack.jpg",
+    name: "Rustic Black",
+  },
+  {
+    id: 4,
+    image: "/images/TAMCO/Eliteglass/rusticredwood.jpg",
+    name: "Rustic Red Wood",
+  },
+  {
+    id: 5,
+    image: "/images/TAMCO/Eliteglass/rusticcedar.jpg",
+    name: "Rustic Cedar",
+  },
   { id: 6, image: "/images/TAMCO/Eliteglass/tilered.jpg", name: "Tile Red" },
-  { id: 7, image: "/images/TAMCO/Eliteglass/tweedblend.jpg", name: "Tweed Blend" },
-  { id: 8, image: "/images/TAMCO/Eliteglass/weatheredwood.jpg", name: "Weather Red Wood" },
-  { id: 9, image: "/images/TAMCO/Heritage/auntmnbrown.jpg", name: "Auntumn Brown" },
-  { id: 10, image: "/images/TAMCO/Heritage/rusticblack.jpg", name: "Rustiic Black" },
-  { id: 11, image: "/images/TAMCO/Heritage/rusticredwood.jpg", name: "Rustic Red" },
-  { id: 12, image: "/images/TAMCO/Heritage/slatetonegrey.jpg", name: "Slateton Grey" },
-  { id: 13, image: "/images/TAMCO/Heritage/thunderstormgrey.jpg", name: "Thunder Storm Grey" },
+  {
+    id: 7,
+    image: "/images/TAMCO/Eliteglass/tweedblend.jpg",
+    name: "Tweed Blend",
+  },
+  {
+    id: 8,
+    image: "/images/TAMCO/Eliteglass/weatheredwood.jpg",
+    name: "Weather Red Wood",
+  },
+  {
+    id: 9,
+    image: "/images/TAMCO/Heritage/auntmnbrown.jpg",
+    name: "Auntumn Brown",
+  },
+  {
+    id: 10,
+    image: "/images/TAMCO/Heritage/rusticblack.jpg",
+    name: "Rustiic Black",
+  },
+  {
+    id: 11,
+    image: "/images/TAMCO/Heritage/rusticredwood.jpg",
+    name: "Rustic Red",
+  },
+  {
+    id: 12,
+    image: "/images/TAMCO/Heritage/slatetonegrey.jpg",
+    name: "Slateton Grey",
+  },
+  {
+    id: 13,
+    image: "/images/TAMCO/Heritage/thunderstormgrey.jpg",
+    name: "Thunder Storm Grey",
+  },
 ];
 
-const Tamco= () => {
+const Tamco = () => {
   const [startIndex, setStartIndex] = useState(0);
   const itemsPerPage = 3;
 
@@ -34,8 +82,8 @@ const Tamco= () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "+6287861777361";
-    const message = `Halo, saya ingin membeli ${productName}.`;
+    const phone = "082123572533";
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -46,14 +94,14 @@ const Tamco= () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/CTI/logo.png"
-            alt="Logo CTI"
+            src="/images/TAMCO/Tamco.png"
+            alt="Logo Tamco"
             className="w-20 md:w-28 h-auto"
           />
           <div>
             <h4 className="text-md font-semibold">Atap Tamco</h4>
             <p className="text-xs">
-              Atap Membran berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap Tamco berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>

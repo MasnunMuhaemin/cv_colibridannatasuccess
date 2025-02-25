@@ -3,8 +3,16 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
   { id: 1, image: "/images/Membran/casalieradix.jpg", name: "Casali Eradix" },
-  { id: 2, image: "/images/Membran/casaligranulegreen.jpg", name: "Casali Granule Green" },
-  { id: 3, image: "/images/Membran/casaligranulegrey.jpg", name: "Casali Granule Grey" },
+  {
+    id: 2,
+    image: "/images/Membran/casaligranulegreen.jpg",
+    name: "Casali Granule Green",
+  },
+  {
+    id: 3,
+    image: "/images/Membran/casaligranulegrey.jpg",
+    name: "Casali Granule Grey",
+  },
   { id: 4, image: "/images/Membran/casalisand.jpg", name: "Casali Sand" },
 ];
 
@@ -25,8 +33,8 @@ const Membran = () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "+6287861777361";
-    const message = `Halo, saya ingin membeli ${productName}.`;
+    const phone = "082123572533";
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -37,9 +45,9 @@ const Membran = () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/CTI/logo.png"
-            alt="Logo CTI"
-            className="w-20 md:w-28 h-auto"
+            src="/images/Membran/Membran.jpg"
+            alt="Logo Membran"
+            className="w-20 md:w-28 h-14"
           />
           <div>
             <h4 className="text-md font-semibold">Atap Membran</h4>

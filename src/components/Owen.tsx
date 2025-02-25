@@ -2,19 +2,67 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/OWEN/Classicsuper/asiangreen.jpg", name: "Asian Green" },
+  {
+    id: 1,
+    image: "/images/OWEN/Classicsuper/asiangreen.jpg",
+    name: "Asian Green",
+  },
   { id: 2, image: "/images/OWEN/Classicsuper/asianred.jpg", name: "Asian Red" },
-  { id: 3, image: "/images/OWEN/Classicsuper/barkbrown.jpg", name: "Bark Brown" },
-  { id: 4, image: "/images/OWEN/Classicsuper/brownwood.jpg", name: "Brown Wood" },
-  { id: 5, image: "/images/OWEN/Classicsuper/deserttan.jpg", name: "Desert Tan" },
-  { id: 6, image: "/images/OWEN/Classicsuper/estategrey.jpg", name: "Estate Grey" },
-  { id: 7, image: "/images/OWEN/Classicsuper/onyxblack.jpg", name: "Onyx Black" },
-  { id: 8, image: "/images/OWEN/Classicsuper/terracotablend.jpg", name: "Terra Cota Blend" },
-  { id: 9, image: "/images/OWEN/Oakridgesuper/asianred.jpg", name: "Asian Red" },
-  { id: 10, image: "/images/OWEN/Oakridgesuper/brownwood.jpg", name: "Brown Wood" },
-  { id: 11, image: "/images/OWEN/Oakridgesuper/estategrey.jpg", name: "Estate Grey" },
-  { id: 12, image: "/images/OWEN/Oakridgesuper/harborblack.jpg", name: "Harvor Black" },
-  { id: 13, image: "/images/OWEN/Oakridgesuper/onyxxblack.jpg", name: "Onyx Black" },
+  {
+    id: 3,
+    image: "/images/OWEN/Classicsuper/barkbrown.jpg",
+    name: "Bark Brown",
+  },
+  {
+    id: 4,
+    image: "/images/OWEN/Classicsuper/brownwood.jpg",
+    name: "Brown Wood",
+  },
+  {
+    id: 5,
+    image: "/images/OWEN/Classicsuper/deserttan.jpg",
+    name: "Desert Tan",
+  },
+  {
+    id: 6,
+    image: "/images/OWEN/Classicsuper/estategrey.jpg",
+    name: "Estate Grey",
+  },
+  {
+    id: 7,
+    image: "/images/OWEN/Classicsuper/onyxblack.jpg",
+    name: "Onyx Black",
+  },
+  {
+    id: 8,
+    image: "/images/OWEN/Classicsuper/terracotablend.jpg",
+    name: "Terra Cota Blend",
+  },
+  {
+    id: 9,
+    image: "/images/OWEN/Oakridgesuper/asianred.jpg",
+    name: "Asian Red",
+  },
+  {
+    id: 10,
+    image: "/images/OWEN/Oakridgesuper/brownwood.jpg",
+    name: "Brown Wood",
+  },
+  {
+    id: 11,
+    image: "/images/OWEN/Oakridgesuper/estategrey.jpg",
+    name: "Estate Grey",
+  },
+  {
+    id: 12,
+    image: "/images/OWEN/Oakridgesuper/harborblack.jpg",
+    name: "Harvor Black",
+  },
+  {
+    id: 13,
+    image: "/images/OWEN/Oakridgesuper/onyxxblack.jpg",
+    name: "Onyx Black",
+  },
 ];
 
 const Owen = () => {
@@ -34,8 +82,8 @@ const Owen = () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "+6287861777361";
-    const message = `Halo, saya ingin membeli ${productName}.`;
+    const phone = "082123572533";
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -46,15 +94,15 @@ const Owen = () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/CTI/logo.png"
-            alt="Logo CTI"
-            className="w-20 md:w-28 h-auto"
+            src="/images/OWEN/Owens.png"
+            alt="Logo Owens"
+            className="w-20 md:w-28 h-14"
           />
           <div>
             <h4 className="text-md font-semibold">Atap Owen Corning</h4>
             <p className="text-xs">
-              Atap Membran berkualitas tinggi dengan daya tahan terhadap cuaca
-              ekstrem.
+              Atap Owen Corning berkualitas tinggi dengan daya tahan terhadap
+              cuaca ekstrem.
             </p>
           </div>
         </div>
@@ -75,7 +123,8 @@ const Owen = () => {
                       {product.name}
                     </h2>
                     <p className="text-gray-600 mb-4 group-hover:text-white">
-                      Atap berkualitas tinggi untuk rumah dan bangunan modern.
+                      Atap kuat dan tahan lama untuk kenyamanan serta estetika
+                      bangunan modern.
                     </p>
                     <button
                       onClick={() => handleWhatsApp(product.name)}

@@ -28,8 +28,8 @@ const GAF = () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "+6287861777361";
-    const message = `Halo, saya ingin membeli ${productName}.`;
+    const phone = "082123572533";
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -40,14 +40,14 @@ const GAF = () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/CTI/logo.png"
-            alt="Logo CTI"
+            src="/images/GAF/logo.png"
+            alt="Logo GAF"
             className="w-20 md:w-28 h-auto"
           />
           <div>
             <h4 className="text-md font-semibold">Atap GAF</h4>
             <p className="text-xs">
-              Atap Membran berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap GAF berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
@@ -69,7 +69,7 @@ const GAF = () => {
                       {product.name}
                     </h2>
                     <p className="text-gray-600 mb-4 group-hover:text-white">
-                      Atap berkualitas tinggi untuk rumah dan bangunan modern.
+                      Atap tangguh dan stylish untuk hunian dan bangunan modern.
                     </p>
                     <button
                       onClick={() => handleWhatsApp(product.name)}
