@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="lg:col-span-7 md:col-span-3 col-span-2 text-center border-t-2 py-5 border-white mt-5">
-        <p className="text-sm">Atap Bitumen Murah Jakarta Timur</p>
+        <p className="text-sm">CV Colibri Dannata Success - Solusi Atap Berkualitas</p>
       </div>
     </footer>
   );
