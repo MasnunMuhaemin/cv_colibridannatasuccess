@@ -1,6 +1,30 @@
-import { IconHome, IconCrane, IconBuildings } from "@tabler/icons-react";
+import {
+  IconHome,
+  IconCrane,
+  IconBuildings,
+  IconChevronLeft,
+  IconChevronRight,
+} from "@tabler/icons-react";
+import { useState } from "react";
+
+const images = [
+  "/images/Galeri/kantor.jpeg",
+  "/images/Galeri/kantor2.jpeg",
+  "/images/Galeri/kantor3.jpeg",
+  "/images/Galeri/kantor4.jpeg",
+];
 
 const Content = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
     <div className="bg-gray-50 font1">
       <div className="text-black max-w-screen-xl mx-auto w-full px-4 md:px-12 py-16">
@@ -40,9 +64,7 @@ const Content = () => {
           </div>
           {/* Kanan: Layanan */}
           <div className="text-black space-y-6 w-full">
-            <h2 className="text-xl md:text-2xl font-bold">
-              Layanan Kami
-            </h2>
+            <h2 className="text-xl md:text-2xl font-bold">Layanan Kami</h2>
             <div className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full">
               <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
                 <IconHome stroke={2} />
@@ -63,15 +85,13 @@ const Content = () => {
               <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
                 <IconBuildings stroke={2} />
               </div>
-              <p className="text-sm md:text-lg">
-                Distributor / Supplier Atap
-              </p>
+              <p className="text-sm md:text-lg">Distributor / Supplier Atap</p>
             </div>
           </div>
         </div>
 
         {/* Visi & Misi */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
           {/* Teks Visi & Misi */}
           <div>
             <h1 className="text-2xl md:text-3xl font-bold mb-6 text-left">
@@ -96,30 +116,21 @@ const Content = () => {
               </li>
             </ul>
           </div>
-          {/* Gambar */}
-          <div className="flex justify-center">
-            <img className="rounded-lg" src="/images/Galeri/kantor.jpeg" alt="" />
-          </div>
-        </div>
-
-        {/* Human Capital */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Gambar */}
-          <div className="flex justify-center">
-            <img className="rounded-lg" src="/images/Galeri/human.png" alt="" />
-          </div>
-          {/* Teks Human Capital */}
-          <div className="flex flex-col space-y-6">
-            <h1 className="text-2xl md:text-3xl font-bold text-right">
-              Human Capital
-            </h1>
-            <p className="text-justify text-sm md:text-base">
-              Kami percaya bahwa sumber daya manusia yang berkualitas adalah
-              aset terbesar perusahaan. Oleh karena itu, kami selalu berusaha
-              menciptakan lingkungan kerja yang kondusif, meningkatkan
-              keterampilan karyawan, dan memberikan kesempatan bagi mereka untuk
-              berkembang bersama perusahaan.
-            </p>
+          {/* Gambar dengan Navigasi */}
+          <div className="flex justify-center relative">
+            <button
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-secondary p-2 rounded-full shadow-md hover:bg-secondary/90 text-white"
+            >
+              <IconChevronLeft stroke={2} />
+            </button>
+            <img className="rounded-lg" src={images[currentImage]} alt="" />
+            <button
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-secondary p-2 rounded-full shadow-md hover:bg-secondary/90 text-white"
+            >
+              <IconChevronRight stroke={2} />
+            </button>
           </div>
         </div>
       </div>
