@@ -1,6 +1,6 @@
 const Maps = () => {
   return (
-    <div className="font1 text-black bg-gray-50 py-16 px-4 md:px-12 max-w-screen-xl mx-auto">
+    <div id="lokasi" className="font1 text-black bg-gray-50 py-16 px-4 md:px-12 max-w-screen-xl mx-auto">
       {/* Section Header */}
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
         Legalitas & Lokasi Kami

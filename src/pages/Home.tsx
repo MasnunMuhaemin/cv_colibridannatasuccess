@@ -1,5 +1,7 @@
 import { Content, Header, FAQ, Brand, Maps } from "../sections";
 import {
+  Navbar,
+  Footer,
   Card,
   Membran,
   Tamco,
@@ -18,6 +20,7 @@ import {
 const Home = () => {
   return (
     <div className="mt-20">
+      <Navbar />
       <Header />
       <Content />
       <Card />
@@ -36,6 +39,7 @@ const Home = () => {
       <Brand />
       <FAQ />
       <Maps />
+      <Footer />
     </div>
   );
 };

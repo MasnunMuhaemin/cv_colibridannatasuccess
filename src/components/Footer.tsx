@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { useCallback } from "react";
 import {
   IconPhone,
   IconMail,
@@ -8,6 +8,13 @@ import {
 } from "@tabler/icons-react";
 
 const Footer = () => {
+  const scrollToSection = useCallback((id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <footer className="bg-secondary lg:px-20 px-10 py-10 grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 mt-20 gap-10 text-gray-100 dark:text-gray-100">
       <div className="md:col-span-3 col-span-2 md:text-left text-center">
@@ -28,24 +35,16 @@ const Footer = () => {
         <h5 className="text-xl font-semibold">Support</h5>
         <ul className="mt-2 space-y-1">
           <li className="text-sm">
-            <NavLink
-              to="faq-section"
-              className={({ isActive }) =>
-                isActive ? "text-primary font-semibold" : "text-gray-100"
-              }
+            <a
+              href="#faq"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("faq");
+              }}
+              className="cursor-pointer text-gray-100 hover:text-primary"
             >
               FAQ
-            </NavLink>
-          </li>
-          <li className="text-sm">
-            <NavLink
-              to="/kontak"
-              className={({ isActive }) =>
-                isActive ? "text-primary font-semibold" : "text-gray-100"
-              }
-            >
-              Kontak Kami
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -55,24 +54,28 @@ const Footer = () => {
         <h5 className="text-xl font-semibold">Links</h5>
         <ul className="mt-2 space-y-1">
           <li className="text-sm">
-            <NavLink
-              to="/produk"
-              className={({ isActive }) =>
-                isActive ? "text-primary font-semibold" : "text-gray-100"
-              }
+            <a
+              href="#produk"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("produk");
+              }}
+              className="cursor-pointer text-gray-100 hover:text-primary"
             >
               Produk
-            </NavLink>
+            </a>
           </li>
           <li className="text-sm">
-            <NavLink
-              to="/tentang"
-              className={({ isActive }) =>
-                isActive ? "text-primary font-semibold" : "text-gray-100"
-              }
+            <a
+              href="#tentang"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("tentang");
+              }}
+              className="cursor-pointer text-gray-100 hover:text-primary"
             >
               Tentang Kami
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -120,6 +123,32 @@ const Footer = () => {
             <IconBrandShopee className="w-6 h-6 text-[#FF5722]" />
             <span className="text-[#FF5722] font-medium">
               Colibri.Dannata_Success
+            </span>
+          </a>
+          <a
+            href="https://www.tokopedia.com/Atap Bitumen Murah Bekasi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/images/Galeri/tokopedia.png"
+              alt="Tokopedia"
+              className="w-6 h-6"
+            />
+            <span className="text-green-500 font-medium">
+              Atap Bitumen Murah Bekasi
+            </span>
+          </a>
+          <a
+            href="https://www.olx.co.id/profile/Atap Bitumen Murah Jakarta Timur"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img src="/images/Galeri/olx.png" alt="OLX" className="w-6 h-6" />
+            <span className="text-purple-700 font-medium">
+              Atap Bitumen Murah Jakarta Timur
             </span>
           </a>
         </div>

@@ -39,7 +39,7 @@ const Card = () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "082123572533";
+    const phone = "+6282123572533";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -48,7 +48,7 @@ const Card = () => {
   };
 
   return (
-    <div className="font1 text-black p-4 relative">
+    <div id="produk" className="font1 text-black p-4 relative">
       <h2 className="text-xl font-bold text-center md:text-left">
         Produk ATAP BITUMEN
       </h2>

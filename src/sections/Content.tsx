@@ -8,10 +8,10 @@ import {
 import { useState } from "react";
 
 const images = [
+  "/images/Galeri/kantor4.jpeg",
   "/images/Galeri/kantor.jpeg",
   "/images/Galeri/kantor2.jpeg",
   "/images/Galeri/kantor3.jpeg",
-  "/images/Galeri/kantor4.jpeg",
 ];
 
 const Content = () => {
@@ -26,7 +26,7 @@ const Content = () => {
   };
 
   return (
-    <div className="bg-gray-50 font1">
+    <div id="about" className="bg-gray-50 font1">
       <div className="text-black max-w-screen-xl mx-auto w-full px-4 md:px-12 py-16">
         {/* Header */}
         <div className="text-center">
@@ -131,6 +131,26 @@ const Content = () => {
             >
               <IconChevronRight stroke={2} />
             </button>
+          </div>
+        </div>
+        {/* Human Capital */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Gambar */}
+          <div className="flex justify-center">
+            <img className="rounded-lg" src="/images/Galeri/human.png" alt="" />
+          </div>
+          {/* Teks Human Capital */}
+          <div className="flex flex-col space-y-6">
+            <h1 className="text-2xl md:text-3xl font-bold text-right">
+              Human Capital
+            </h1>
+            <p className="text-justify text-sm md:text-base">
+              Kami percaya bahwa sumber daya manusia yang berkualitas adalah
+              aset terbesar perusahaan. Oleh karena itu, kami selalu berusaha
+              menciptakan lingkungan kerja yang kondusif, meningkatkan
+              keterampilan karyawan, dan memberikan kesempatan bagi mereka untuk
+              berkembang bersama perusahaan.
+            </p>
           </div>
         </div>
       </div>

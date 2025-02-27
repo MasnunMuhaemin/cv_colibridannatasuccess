@@ -117,7 +117,7 @@ const Tamco = () => {
   };
 
   const handleWhatsApp = (productName: string): void => {
-    const phone = "082123572533";
+    const phone = "+6282123572533";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,

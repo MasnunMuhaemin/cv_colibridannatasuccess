@@ -1,19 +1,49 @@
 import { IconMenu2, IconX } from "@tabler/icons-react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   function openMenu() {
     setIsOpen(!isOpen);
   }
 
+  const handleScroll = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(id);
+    setIsOpen(false); // Tutup menu setelah diklik (hanya untuk mobile)
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["about", "produk", "lokasi", "legalitas"];
+      let currentSection = "";
+
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            currentSection = id;
+          }
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section>
       <div
         id="nav"
-        className="font1 w-full backdrop-blur-lg shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 xl:px-20 2xl:px-32 max-w-screen-2xl mx-auto"
+        className="font1 w-full backdrop-blur-lg shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 xl:px-20 2xl:px-32 max-w-screen-2xl mx-auto bg-white"
       >
         <div className="flex items-center gap-3">
           <h1 className="font-bold whitespace-nowrap text-black lg:text-2xl text-2xl">
@@ -23,26 +53,34 @@ const Navbar = () => {
 
         {/* Menu untuk Desktop */}
         <div className="hidden lg:flex items-center gap-6 text-black font-semibold">
-          <NavLink to="about-section" className="relative group text-lg">
-            Tentang Kami
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
-          <NavLink to="/" className="relative group text-lg">
-            Produk
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
-          <NavLink to="/" className="relative group text-lg">
-            Lokasi
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
-          <NavLink to="/" className="relative group text-lg">
-            Legalitas
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
-          <NavLink to="/" className="relative group text-lg">
-            Kontak
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
+          {["about", "produk", "lokasi", "legalitas"].map(
+            (id, index) => (
+              <a
+                key={index}
+                href={`#${id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScroll(id);
+                }}
+                className={`relative group text-lg ${
+                  activeSection === id
+                    ? "text-secondary font-bold"
+                    : "text-black"
+                }`}
+              >
+                {id === "about"
+                  ? "Tentang Kami"
+                  : id.charAt(0).toUpperCase() + id.slice(1)}
+                <span
+                  className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
+                    activeSection === id
+                      ? "w-full bg-secondary"
+                      : "w-0 bg-black group-hover:w-full"
+                  }`}
+                />
+              </a>
+            )
+          )}
         </div>
 
         {/* Menu untuk Mobile */}
@@ -72,46 +110,30 @@ const Navbar = () => {
               <IconX size={32} />
             </button>
             <div className="flex flex-col justify-center items-center gap-6 text-xl font-semibold">
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
-                Tentang Kami
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
-                Produk
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
-                Lokasi
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
-                Legalitas
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
-                Kontak
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
+              {["about", "produk", "lokasi", "legalitas"].map(
+                (id, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleScroll(id)}
+                    className={`relative group ${
+                      activeSection === id
+                        ? "text-secondary font-bold"
+                        : "text-zinc-800"
+                    }`}
+                  >
+                    {id === "about"
+                      ? "Tentang Kami"
+                      : id.charAt(0).toUpperCase() + id.slice(1)}
+                    <span
+                      className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
+                        activeSection === id
+                          ? "w-full bg-secondary"
+                          : "w-0 bg-black group-hover:w-full"
+                      }`}
+                    />
+                  </button>
+                )
+              )}
             </div>
           </div>
         </div>
