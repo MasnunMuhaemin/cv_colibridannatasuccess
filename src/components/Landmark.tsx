@@ -81,7 +81,7 @@ const Landmark = () => {
             ))}
         </div>
 
-        {/* <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur GAF1.pdf"
             download
@@ -103,7 +103,7 @@ const Landmark = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );
