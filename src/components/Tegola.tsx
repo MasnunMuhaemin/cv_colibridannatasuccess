@@ -218,9 +218,9 @@ const Tegola = () => {
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap Owen Corning</h4>
+            <h4 className="text-md font-semibold">Atap Tegola</h4>
             <p className="text-xs">
-              Atap Owen Corning berkualitas tinggi dengan daya tahan terhadap
+              Atap Tegola berkualitas tinggi dengan daya tahan terhadap
               cuaca ekstrem.
             </p>
           </div>
