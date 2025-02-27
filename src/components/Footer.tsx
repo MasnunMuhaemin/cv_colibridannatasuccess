@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   IconPhone,
   IconMail,
@@ -21,22 +22,62 @@ const Footer = () => {
           maksimal.
         </p>
       </div>
+
+      {/* Support Links */}
       <div className="pt-5 pl-5 md:pl-0">
         <h5 className="text-xl font-semibold">Support</h5>
         <ul className="mt-2 space-y-1">
-          <li className="text-sm">FAQ</li>
-          <li className="text-sm">Kontak Kami</li>
+          <li className="text-sm">
+            <NavLink
+              to="faq-section"
+              className={({ isActive }) =>
+                isActive ? "text-primary font-semibold" : "text-gray-100"
+              }
+            >
+              FAQ
+            </NavLink>
+          </li>
+          <li className="text-sm">
+            <NavLink
+              to="/kontak"
+              className={({ isActive }) =>
+                isActive ? "text-primary font-semibold" : "text-gray-100"
+              }
+            >
+              Kontak Kami
+            </NavLink>
+          </li>
         </ul>
       </div>
+
+      {/* Links */}
       <div className="pt-5 pl-10 md:pl-0">
         <h5 className="text-xl font-semibold">Links</h5>
         <ul className="mt-2 space-y-1">
-          <li className="text-sm">Produk</li>
-          <li className="text-sm">Galeri</li>
-          <li className="text-sm">Testimoni</li>
-          <li className="text-sm">Tentang Kami</li>
+          <li className="text-sm">
+            <NavLink
+              to="/produk"
+              className={({ isActive }) =>
+                isActive ? "text-primary font-semibold" : "text-gray-100"
+              }
+            >
+              Produk
+            </NavLink>
+          </li>
+          <li className="text-sm">
+            <NavLink
+              to="/tentang"
+              className={({ isActive }) =>
+                isActive ? "text-primary font-semibold" : "text-gray-100"
+              }
+            >
+              Tentang Kami
+            </NavLink>
+          </li>
         </ul>
       </div>
+
+      {/* Kontak */}
       <div className="lg:col-span-2 md:col-span-1 col-span-2 md:text-left text-center pt-5">
         <h5 className="text-xl font-semibold mb-5">Kontak Kami</h5>
         <p className="flex gap-4 mb-3 md:justify-start justify-center">
@@ -46,6 +87,8 @@ const Footer = () => {
           <IconMail className="w-5 h-5 text-white" />{" "}
           cv.colibridannatasuces@gmail.com
         </p>
+
+        {/* Sosial Media */}
         <h5 className="text-xl font-semibold mt-5">Sosial Media</h5>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-3">
           <a
@@ -79,34 +122,14 @@ const Footer = () => {
               Colibri.Dannata_Success
             </span>
           </a>
-          <a
-            href="https://www.tokopedia.com/colibri-dannata"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2"
-          >
-            <img
-              src="/images/Galeri/tokopedia.png"
-              alt="Tokopedia"
-              className="w-6 h-6"
-            />
-            <span className="text-green-500 font-medium">Colibri Dannata</span>
-          </a>
-          <a
-            href="https://www.olx.co.id/profile/colibri-dannata"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2"
-          >
-            <img src="/images/Galeri/olx.png" alt="OLX" className="w-6 h-6" />
-            <span className="text-blue-600 font-medium">
-              Atap Bitumen Murah Bekasi
-            </span>
-          </a>
         </div>
       </div>
+
+      {/* Copyright */}
       <div className="lg:col-span-7 md:col-span-3 col-span-2 text-center border-t-2 py-5 border-white mt-5">
-        <p className="text-sm">CV Colibri Dannata Success - Solusi Atap Berkualitas</p>
+        <p className="text-sm">
+          CV Colibri Dannata Success - Solusi Atap Berkualitas
+        </p>
       </div>
     </footer>
   );

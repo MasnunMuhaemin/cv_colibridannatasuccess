@@ -23,11 +23,7 @@ const Navbar = () => {
 
         {/* Menu untuk Desktop */}
         <div className="hidden lg:flex items-center gap-6 text-black font-semibold">
-          <NavLink to="/" className="relative group text-lg">
-            Beranda
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-          </NavLink>
-          <NavLink to="/" className="relative group text-lg">
+          <NavLink to="about-section" className="relative group text-lg">
             Tentang Kami
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
           </NavLink>
@@ -36,11 +32,11 @@ const Navbar = () => {
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
           </NavLink>
           <NavLink to="/" className="relative group text-lg">
-            Keunggulan
+            Lokasi
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
           </NavLink>
           <NavLink to="/" className="relative group text-lg">
-            Spesifikasi
+            Legalitas
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
           </NavLink>
           <NavLink to="/" className="relative group text-lg">
@@ -81,14 +77,6 @@ const Navbar = () => {
                 onClick={openMenu}
                 className="relative group text-zinc-800"
               >
-                Beranda
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
-              </NavLink>
-              <NavLink
-                to="/"
-                onClick={openMenu}
-                className="relative group text-zinc-800"
-              >
                 Tentang Kami
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
               </NavLink>
@@ -105,7 +93,7 @@ const Navbar = () => {
                 onClick={openMenu}
                 className="relative group text-zinc-800"
               >
-                Keunggulan
+                Lokasi
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
               </NavLink>
               <NavLink
@@ -113,7 +101,7 @@ const Navbar = () => {
                 onClick={openMenu}
                 className="relative group text-zinc-800"
               >
-                Spesifikasi
+                Legalitas
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
               </NavLink>
               <NavLink
