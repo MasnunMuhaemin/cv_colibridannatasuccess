@@ -38,7 +38,7 @@ const Cardupvc = () => {
   };
 
   return (
-    <div className="font1 text-black p-4 relative">
+    <div className="font1 text-black p-4 relative my-20">
       <h2 className="text-xl font-bold text-center md:text-left">
         Produk ATAP UPVC
       </h2>
@@ -51,9 +51,9 @@ const Cardupvc = () => {
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap CTI</h4>
+            <h4 className="text-md font-semibold">Atap Zincalume</h4>
             <p className="text-xs">
-              Atap CTI berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap Zincalume berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>

@@ -25,9 +25,9 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="text-black font1 my-28 lg:py-28 md:mx-28 mx-10">
+        <div className="bg-gray-50">
+        <div className="text-black font1 my-10 lg:py-28 md:mx-28 mx-10">
             <div className="lg:flex gap-10 text-foreground">
-
                 <div className="flex flex-col self-center flex-1 lg:mb-0 mb-5 lg:text-left text-center">
                     <p className="text-shades font-bold md:text-2xl text-xl">FAQ</p>
                     <p className="text-xl md:text-3xl font-bold">Punya Pertanyaan Seputar CV Colibri Dannata Success?</p>
@@ -55,6 +55,7 @@ const FAQ = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

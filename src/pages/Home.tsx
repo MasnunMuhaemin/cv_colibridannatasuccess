@@ -1,4 +1,4 @@
-import { Content,Header, FAQ } from "../sections";
+import { Content,Header, FAQ, Brand } from "../sections";
 import { Card, Membran, Tamco, GAF, Owen, Tegola, Firescreen, BSK, Gemstone, Maxxi, Victory, Dragon, Cardupvc } from "../components";
 
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
         <Victory />
         <Dragon />
         <Cardupvc />
+        <Brand />
         <FAQ />
       </div>
     );
