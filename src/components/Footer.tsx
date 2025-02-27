@@ -67,10 +67,10 @@ const Footer = () => {
           </li>
           <li className="text-sm">
             <a
-              href="#tentang"
+              href="#about"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection("tentang");
+                scrollToSection("about");
               }}
               className="cursor-pointer text-gray-100 hover:text-primary"
             >
