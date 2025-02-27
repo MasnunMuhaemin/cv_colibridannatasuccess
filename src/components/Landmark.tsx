@@ -81,14 +81,14 @@ const Landmark = () => {
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
-          {/* <a
+        {/* <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+          <a
             href="/images/Brosur/Brosur GAF1.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >
             Download Brosur
-          </a> */}
+          </a>
 
           <button
             onClick={prevSlide}
@@ -103,7 +103,7 @@ const Landmark = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
