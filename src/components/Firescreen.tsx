@@ -84,13 +84,13 @@ const Firescreen = () => {
         </div>
 
         <div className="absolute bottom-4 right-4 flex gap-2 items-center">
-          <a
+          {/* <a
             href="/images/Brosur/CTI.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >
             Download Brosur
-          </a>
+          </a> */}
 
           <button
             onClick={prevSlide}
