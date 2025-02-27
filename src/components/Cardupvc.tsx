@@ -30,7 +30,8 @@ const Cardupvc = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
+    const brandName = "Atap Zincalume"; // Tambahkan nama brand
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"

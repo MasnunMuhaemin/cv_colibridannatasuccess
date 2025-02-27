@@ -2,16 +2,12 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/GAF/AshBrown.jpg", name: "Ash Brown" },
-  { id: 2, image: "/images/GAF/AutumnBrown.jpg", name: "Auntumn Brown" },
-  { id: 3, image: "/images/GAF/Charcoal.jpg", name: "Charcoal" },
-  { id: 4, image: "/images/GAF/Goldencedar.jpg", name: "Golden Cedar" },
-  { id: 5, image: "/images/GAF/Hickory.jpg", name: "Hickory" },
-  { id: 6, image: "/images/GAF/Shakewood.jpg", name: "Shake Wood" },
-  { id: 7, image: "/images/GAF/Slate.jpg", name: "Slate" },
+  { id: 1, image: "/images/Landmark/Darkbrown.jpg", name: "Dark Brown" },
+  { id: 2, image: "/images/Landmark/Darkgrey.jpg", name: "Dark Grey" },
+  { id: 3, image: "/images/Landmark/Grey.jpg", name: "Grey" }
 ];
 
-const GAF = () => {
+const Landmark = () => {
   const [startIndex, setStartIndex] = useState(0);
   const itemsPerPage = 3;
 
@@ -29,26 +25,27 @@ const GAF = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap GAF"; // Tambahkan nama brand
+    const brandName = "Atap Landmark"; // Tambahkan nama brand
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
+
   return (
     <div className="p-4">
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/GAF/GAF.png"
-            alt="Logo GAF"
+            src="/images/Landmark/Landmark.jpeg"
+            alt="Logo Landmark"
             className="w-20 md:w-28 h-16"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap GAF</h4>
+            <h4 className="text-md font-semibold">Atap Landmark</h4>
             <p className="text-xs">
-              Atap GAF berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap Landmark berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
@@ -112,4 +109,4 @@ const GAF = () => {
   );
 };
 
-export default GAF;
+export default Landmark;

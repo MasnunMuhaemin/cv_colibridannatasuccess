@@ -14,6 +14,7 @@ import {
   Maxxi,
   Victory,
   Dragon,
+  Landmark,
   Cardupvc,
 } from "../components";
 
@@ -35,6 +36,7 @@ const Home = () => {
       <Maxxi />
       <Victory />
       <Dragon />
+      <Landmark />
       <Cardupvc />
       <Brand />
       <FAQ />

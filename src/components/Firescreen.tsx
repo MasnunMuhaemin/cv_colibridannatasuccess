@@ -3,7 +3,7 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
   { id: 1, image: "/images/FIRESCREEN/Deserttan.jpg", name: "Desert Tan" },
-  { id: 2, image: "/images/FIRESCREEN/Driftwood.jpg", name: "Drift Wood" },
+  { id: 2, image: "/images/FIRESCREEN/DriftWood.jpg", name: "Drift Wood" },
   { id: 3, image: "/images/FIRESCREEN/Moireblack.jpg", name: "Moire Black" },
   { id: 4, image: "/images/FIRESCREEN/Mossgreen.jpg", name: "Moss Green" },
   { id: 5, image: "/images/FIRESCREEN/Oakwood.jpg", name: "Oakwood" },
@@ -28,7 +28,8 @@ const Firescreen = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${productName}.`;
+    const brandName = "Atap Firescreen"; // Tambahkan nama brand
+    const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
