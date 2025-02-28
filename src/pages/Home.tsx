@@ -5,7 +5,7 @@ import {
   Card,
   Membran,
   Tamco,
-  GAF,
+  CTI,
   Owen,
   Tegola,
   Firescreen,
@@ -27,7 +27,7 @@ const Home = () => {
       <Card />
       <Membran />
       <Tamco />
-      <GAF />
+      <CTI />
       <Owen />
       <Tegola />
       <Firescreen />

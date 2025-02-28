@@ -1,18 +1,20 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/Hero/CTIBrosur.jpg",
-  "/images/Hero/CTIBrosur2.jpg",
-  "/images/Hero/CTIBrosur3.jpg",
-  "/images/Hero/CTIBrosur4.jpg",
-  "/images/Hero/CTIBrosur5.jpg",
   "/images/Hero/Hero1.jpg",
+  "/images/Hero/CTIBrosur.jpg",
   "/images/Hero/Hero2.jpeg",
+  "/images/Hero/CTIBrosur2.jpg",
   "/images/Hero/Hero3.jpg",
+  "/images/Hero/CTIBrosur3.jpg",
   "/images/Hero/Hero4.jpg",
+  "/images/Hero/CTIBrosur4.jpg",
   "/images/Hero/Hero5.jpeg",
+  "/images/Hero/CTIBrosur5.jpg",
   "/images/Hero/Hero6.jpg",
-  "/images/Hero/Hero7.jpeg",
+  "/images/Hero/Hero7.jpg",
+  "/images/Hero/Hero8.jpg",
+  "/images/Hero/Hero9.jpg",
 ];
 
 const Header = () => {
