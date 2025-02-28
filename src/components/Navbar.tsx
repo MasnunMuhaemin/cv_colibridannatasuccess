@@ -10,10 +10,10 @@ const Navbar = () => {
   }
 
   const handleScroll = (id: string) => {
-    const targetId = id === "legalitas" ? "lokasi" : id; // Legalitas diarahkan ke Lokasi
+    const targetId = id === "legalitas" ? "lokasi" : id; 
     document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
     setActiveSection(targetId);
-    setIsOpen(false); // Tutup menu setelah diklik (hanya untuk mobile)
+    setIsOpen(false); 
   };
 
   useEffect(() => {
