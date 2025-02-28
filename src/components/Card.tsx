@@ -2,55 +2,48 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/GAF/AshBrown.jpg", name: "Ash Brown" },
-  { id: 2, image: "/images/GAF/AutumnBrown.jpg", name: "Auntumn Brown" },
-  { id: 3, image: "/images/GAF/Charcoal.jpg", name: "Charcoal" },
-  { id: 4, image: "/images/GAF/Goldencedar.jpg", name: "Golden Cedar" },
-  { id: 5, image: "/images/GAF/Hickory.jpg", name: "Hickory" },
-  { id: 6, image: "/images/GAF/Shakewood.jpg", name: "Shake Wood" },
-  { id: 7, image: "/images/GAF/Slate.jpg", name: "Slate" },
   {
-    id: 8,
+    id: 1,
     image: "/images/GAF/Royalsovereign/AshBrown.jpg",
     name: "Royal Sovereign Ash Brown",
   },
   {
-    id: 9,
+    id: 2,
     image: "/images/GAF/Royalsovereign/AutumnBrown.jpg",
     name: "Royal Sovereign Autumn Brown",
   },
   {
-    id: 10,
+    id: 3,
     image: "/images/GAF/Royalsovereign/Charcoal.jpg",
     name: "Royal Sovereign Charcoal",
   },
   {
-    id: 11,
+    id: 4,
     image: "/images/GAF/Royalsovereign/Goldencedar.jpg",
     name: "Royal Sovereign Golden Cedar",
   },
   {
-    id: 12,
+    id: 5,
     image: "/images/GAF/Royalsovereign/Slate.jpg",
     name: "Royal Sovereign Slate",
   },
   {
-    id: 13,
+    id: 6,
     image: "/images/GAF/Timberline/Charcoal.jpg",
     name: "Timberline Slate",
   },
   {
-    id: 14,
+    id: 7,
     image: "/images/GAF/Timberline/Hickory.jpg",
     name: "Timberline Slate",
   },
   {
-    id: 15,
+    id: 8,
     image: "/images/GAF/Timberline/Shakewood.jpg",
     name: "Timberline Slate",
   },
   {
-    id: 16,
+    id: 9,
     image: "/images/GAF/Timberline/Slate.jpg",
     name: "Timberline Slate",
   },
