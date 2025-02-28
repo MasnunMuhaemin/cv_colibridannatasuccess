@@ -91,7 +91,7 @@ const Tamco = () => {
     );
   };
   return (
-    <div className="p-4">
+    <div className="font1 p-4">
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img

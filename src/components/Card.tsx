@@ -9,15 +9,51 @@ const products = [
   { id: 5, image: "/images/GAF/Hickory.jpg", name: "Hickory" },
   { id: 6, image: "/images/GAF/Shakewood.jpg", name: "Shake Wood" },
   { id: 7, image: "/images/GAF/Slate.jpg", name: "Slate" },
-  { id: 8, image: "/images/GAF/Royalsovereign/AshBrown.jpg", name: "Royal Sovereign Ash Brown" },
-  { id: 9, image: "/images/GAF/Royalsovereign/AutumnBrown.jpg", name: "Royal Sovereign Autumn Brown" },
-  { id: 10, image: "/images/GAF/Royalsovereign/Charcoal.jpg", name: "Royal Sovereign Charcoal" },
-  { id: 11, image: "/images/GAF/Royalsovereign/Goldencedar.jpg", name: "Royal Sovereign Golden Cedar" },
-  { id: 12, image: "/images/GAF/Royalsovereign/Slate.jpg", name: "Royal Sovereign Slate" },
-  { id: 13, image: "/images/GAF/Timberline/Charcoal.jpg", name: "Timberline Slate" },
-  { id: 14, image: "/images/GAF/Timberline/Hickory.jpg", name: "Timberline Slate" },
-  { id: 15, image: "/images/GAF/Timberline/Shakewood.jpg", name: "Timberline Slate" },
-  { id: 16, image: "/images/GAF/Timberline/Slate.jpg", name: "Timberline Slate" },
+  {
+    id: 8,
+    image: "/images/GAF/Royalsovereign/AshBrown.jpg",
+    name: "Royal Sovereign Ash Brown",
+  },
+  {
+    id: 9,
+    image: "/images/GAF/Royalsovereign/AutumnBrown.jpg",
+    name: "Royal Sovereign Autumn Brown",
+  },
+  {
+    id: 10,
+    image: "/images/GAF/Royalsovereign/Charcoal.jpg",
+    name: "Royal Sovereign Charcoal",
+  },
+  {
+    id: 11,
+    image: "/images/GAF/Royalsovereign/Goldencedar.jpg",
+    name: "Royal Sovereign Golden Cedar",
+  },
+  {
+    id: 12,
+    image: "/images/GAF/Royalsovereign/Slate.jpg",
+    name: "Royal Sovereign Slate",
+  },
+  {
+    id: 13,
+    image: "/images/GAF/Timberline/Charcoal.jpg",
+    name: "Timberline Slate",
+  },
+  {
+    id: 14,
+    image: "/images/GAF/Timberline/Hickory.jpg",
+    name: "Timberline Slate",
+  },
+  {
+    id: 15,
+    image: "/images/GAF/Timberline/Shakewood.jpg",
+    name: "Timberline Slate",
+  },
+  {
+    id: 16,
+    image: "/images/GAF/Timberline/Slate.jpg",
+    name: "Timberline Slate",
+  },
 ];
 
 const Card = () => {
@@ -46,7 +82,10 @@ const Card = () => {
     );
   };
   return (
-    <div id="produk" className="p-4">
+    <div id="produk" className="font1 text-black p-4">
+      <h2 className="text-xl font-bold text-center md:text-left">
+        Produk ATAP BITUMEN
+      </h2>
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img

@@ -10,14 +10,15 @@ const Navbar = () => {
   }
 
   const handleScroll = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(id);
+    const targetId = id === "legalitas" ? "lokasi" : id; // Legalitas diarahkan ke Lokasi
+    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(targetId);
     setIsOpen(false); // Tutup menu setelah diklik (hanya untuk mobile)
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "produk", "lokasi", "legalitas"];
+      const sections = ["about", "produk", "lokasi"];
       let currentSection = "";
 
       sections.forEach((id) => {
@@ -53,34 +54,32 @@ const Navbar = () => {
 
         {/* Menu untuk Desktop */}
         <div className="hidden lg:flex items-center gap-6 text-black font-semibold">
-          {["about", "produk", "lokasi", "legalitas"].map(
-            (id, index) => (
-              <a
-                key={index}
-                href={`#${id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleScroll(id);
-                }}
-                className={`relative group text-lg ${
-                  activeSection === id
-                    ? "text-secondary font-bold"
-                    : "text-black"
+          {["about", "produk", "lokasi", "legalitas"].map((id, index) => (
+            <a
+              key={index}
+              href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll(id);
+              }}
+              className={`relative group text-lg ${
+                activeSection === (id === "legalitas" ? "lokasi" : id)
+                  ? "text-secondary font-bold"
+                  : "text-black"
+              }`}
+            >
+              {id === "about"
+                ? "Tentang Kami"
+                : id.charAt(0).toUpperCase() + id.slice(1)}
+              <span
+                className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
+                  activeSection === (id === "legalitas" ? "lokasi" : id)
+                    ? "w-full bg-secondary"
+                    : "w-0 bg-black group-hover:w-full"
                 }`}
-              >
-                {id === "about"
-                  ? "Tentang Kami"
-                  : id.charAt(0).toUpperCase() + id.slice(1)}
-                <span
-                  className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
-                    activeSection === id
-                      ? "w-full bg-secondary"
-                      : "w-0 bg-black group-hover:w-full"
-                  }`}
-                />
-              </a>
-            )
-          )}
+              />
+            </a>
+          ))}
         </div>
 
         {/* Menu untuk Mobile */}
@@ -110,30 +109,28 @@ const Navbar = () => {
               <IconX size={32} />
             </button>
             <div className="flex flex-col justify-center items-center gap-6 text-xl font-semibold">
-              {["about", "produk", "lokasi", "legalitas"].map(
-                (id, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleScroll(id)}
-                    className={`relative group ${
-                      activeSection === id
-                        ? "text-secondary font-bold"
-                        : "text-zinc-800"
+              {["about", "produk", "lokasi", "legalitas"].map((id, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleScroll(id)}
+                  className={`relative group ${
+                    activeSection === (id === "legalitas" ? "lokasi" : id)
+                      ? "text-secondary font-bold"
+                      : "text-zinc-800"
+                  }`}
+                >
+                  {id === "about"
+                    ? "Tentang Kami"
+                    : id.charAt(0).toUpperCase() + id.slice(1)}
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
+                      activeSection === (id === "legalitas" ? "lokasi" : id)
+                        ? "w-full bg-secondary"
+                        : "w-0 bg-black group-hover:w-full"
                     }`}
-                  >
-                    {id === "about"
-                      ? "Tentang Kami"
-                      : id.charAt(0).toUpperCase() + id.slice(1)}
-                    <span
-                      className={`absolute left-0 bottom-0 h-[2px] transition-all duration-300 ${
-                        activeSection === id
-                          ? "w-full bg-secondary"
-                          : "w-0 bg-black group-hover:w-full"
-                      }`}
-                    />
-                  </button>
-                )
-              )}
+                  />
+                </button>
+              ))}
             </div>
           </div>
         </div>
