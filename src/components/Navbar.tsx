@@ -44,7 +44,7 @@ const Navbar = () => {
     <section>
       <div
         id="nav"
-        className="font1 w-full backdrop-blur-lg shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 xl:px-20 2xl:px-32 max-w-screen-2xl mx-auto bg-white"
+        className="font1 w-full backdrop-blur-lg shadow-md py-3 flex items-center justify-between fixed top-0 z-50 transition-all duration-300 px-6 lg:px-12 xl:px-20 2xl:px-32 max-w-screen-2xl mx-auto"
       >
         <div className="flex items-center gap-3">
           <h1 className="font-bold whitespace-nowrap text-black lg:text-2xl text-2xl">
@@ -98,7 +98,7 @@ const Navbar = () => {
 
           {/* Fullscreen Sidebar Menu */}
           <div
-            className={`fixed top-0 left-0 w-screen h-screen bg-white z-50 flex flex-col items-center justify-center transform ${
+            className={`fixed top-0 left-0 w-screen h-screen backdrop-blur-lg bg-white/65 z-50 flex flex-col items-center justify-center transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } transition-transform duration-300 ease-in-out`}
           >
