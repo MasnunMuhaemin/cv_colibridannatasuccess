@@ -4,7 +4,7 @@ const Project = () => {
       src: "/images/Galeri/Project1.jpeg",
       alt: "Sari Pan Pacific Jakarta",
       label: "Sari Pan Pacific Jakarta",
-      description: "Ptoject Sari Pan Pacific Jakarta.",
+      description: "Project Sari Pan Pacific Jakarta.",
     },
     {
       src: "/images/Galeri/Project4.jpeg",
