@@ -1,4 +1,4 @@
-import { Content, Header, FAQ, Brand, Maps } from "../sections";
+import { Content, Header, FAQ, Brand, Maps, Project } from "../sections";
 import {
   Navbar,
   Footer,
@@ -38,6 +38,7 @@ const Home = () => {
       <Landmark />
       <Membran />
       <Cardupvc />
+      <Project />
       <Brand />
       <FAQ />
       <Maps />
