@@ -25,9 +25,8 @@ const Home = () => {
       <Header />
       <Content />
       <Card />
-      <Membran />
-      <Tamco />
       <CTI />
+      <Tamco />
       <Owen />
       <Tegola />
       <Firescreen />
@@ -37,6 +36,7 @@ const Home = () => {
       <Victory />
       <Dragon />
       <Landmark />
+      <Membran />
       <Cardupvc />
       <Brand />
       <FAQ />
