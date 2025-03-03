@@ -16,6 +16,9 @@ import {
   Dragon,
   Landmark,
   Cardupvc,
+  Alderon,
+  Ecoroof,
+  Henda,
 } from "../components";
 
 const Home = () => {
@@ -38,6 +41,9 @@ const Home = () => {
       <Landmark />
       <Membran />
       <Cardupvc />
+      <Alderon />
+      <Ecoroof />
+      <Henda />
       <Project />
       <Brand />
       <FAQ />

@@ -2,14 +2,14 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/ZINCLAUME/AtapGelombang/JayaDeck.jpg", name: "Jaya Deck" },
-  { id: 2, image: "/images/ZINCLAUME/AtapGelombang/Jayadeck2.jpg", name: "Jaya Deck" },
-  { id: 3, image: "/images/ZINCLAUME/AtapGelombang/Jayadeck3.jpg", name: "Jaya Deck" },
-  { id: 4, image: "/images/ZINCLAUME/AtapGelombang/JayaDeck4.jpg", name: "Jaya Deck" },
-  { id: 5, image: "/images/ZINCLAUME/GentengMetal/Inti.jpg", name: "Inti" },
-  { id: 6, image: "/images/ZINCLAUME/GentengMetal/Minimalis.jpg", name: "Minimalis" },
-  { id: 7, image: "/images/ZINCLAUME/GentengMetal/MinimalisTrendyColor.jpg", name: "Minimalis Trendi Color" },
-  { id: 8, image: "/images/ZINCLAUME/GentengMetal/MinimalisTrendyColor2.jpg", name: "Minimalis Trendi Color" },
+  { id: 1, image: "/images/Primasupreme/AtapGelombang/JayaDeck.jpg", name: "Jaya Deck 700/800 Color" },
+  { id: 2, image: "/images/Primasupreme/AtapGelombang/Jayadeck2.jpg", name: "Jaya Deck 750/765 Color" },
+  { id: 3, image: "/images/Primasupreme/AtapGelombang/Jayadeck3.jpg", name: "Jaya Deck 960" },
+  { id: 4, image: "/images/Primasupreme/AtapGelombang/JayaDeck4.jpg", name: "Jaya Deck 1020" },
+  { id: 5, image: "/images/Primasupreme/GentengMetal/Inti.jpg", name: "Inti 3x4" },
+  { id: 6, image: "/images/Primasupreme/GentengMetal/Minimalis.jpg", name: "Minimalis 2x2" },
+  { id: 7, image: "/images/Primasupreme/GentengMetal/MinimalisTrendyColor.jpg", name: "Minimalis Trendi Color" },
+  { id: 8, image: "/images/Primasupreme/GentengMetal/MinimalisTrendyColor2.jpg", name: "Minimalis Trendi Color" },
 ];
 
 const Cardupvc = () => {
@@ -39,7 +39,7 @@ const Cardupvc = () => {
   };
 
   return (
-    <div className="font1 text-black p-4 relative my-20">
+    <div className="font1 text-black p-4 relative mt-20">
       <h2 className="text-xl font-bold text-center md:text-left">
         Produk ATAP UPVC
       </h2>
@@ -52,9 +52,9 @@ const Cardupvc = () => {
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap Zincalume</h4>
+            <h4 className="text-md font-semibold">Atap Prima Roof</h4>
             <p className="text-xs">
-              Atap Zincalume berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap Prima Roof berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
