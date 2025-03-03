@@ -45,13 +45,13 @@ const Content = () => {
             <h2 className="text-xl md:text-2xl font-bold mb-4">Tentang Kami</h2>
             <p className="leading-relaxed text-sm md:text-base">
               <span className="font-semibold">CV. COLIBRI DANNATA SUCCESS</span>{" "}
-              adalah perusahaan berpengalaman yang berdiri sejak 2021,
+              adalah perusahaan berpengalaman yang berdiri sejak 2019,
               menyediakan desain dan pemasangan material konstruksi atap untuk
               proyek nasional.
             </p>
             <p className="mt-4 leading-relaxed text-sm md:text-base">
               Dengan kualifikasi yang terjamin, kami menyediakan berbagai produk
-              atap baja ringan dan floordeck metal yang mendukung pembangunan di
+              Atap Baja Ringan dan Waterproofing yang mendukung pembangunan di
               Indonesia.
             </p>
             {/* Highlight Box */}
