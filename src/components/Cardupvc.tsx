@@ -2,14 +2,11 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/Primasupreme/AtapGelombang/JayaDeck.jpg", name: "Jaya Deck 700/800 Color" },
-  { id: 2, image: "/images/Primasupreme/AtapGelombang/Jayadeck2.jpg", name: "Jaya Deck 750/765 Color" },
-  { id: 3, image: "/images/Primasupreme/AtapGelombang/Jayadeck3.jpg", name: "Jaya Deck 960" },
-  { id: 4, image: "/images/Primasupreme/AtapGelombang/JayaDeck4.jpg", name: "Jaya Deck 1020" },
-  { id: 5, image: "/images/Primasupreme/GentengMetal/Inti.jpg", name: "Inti 3x4" },
-  { id: 6, image: "/images/Primasupreme/GentengMetal/Minimalis.jpg", name: "Minimalis 2x2" },
-  { id: 7, image: "/images/Primasupreme/GentengMetal/MinimalisTrendyColor.jpg", name: "Minimalis Trendi Color" },
-  { id: 8, image: "/images/Primasupreme/GentengMetal/MinimalisTrendyColor2.jpg", name: "Minimalis Trendi Color" },
+  { id: 1, image: "/images/ALDERON/Alderonaksesoris.jpg", name: "Aksesoris Wather Seal & NOK" },
+  { id: 2, image: "/images/ALDERON/Alderoncorugatted.jpg", name: "Alderon Twin Wall Corrugated" },
+  { id: 3, image: "/images/ALDERON/Alderoneco.jpg", name: "Alderon Eco" },
+  { id: 4, image: "/images/ALDERON/Alderonsingle.jpg", name: "Alderon RS Single Wall Corrugated" },
+  { id: 5, image: "/images/ALDERON/Alderontwin.jpg", name: "Alderon Lite Twin Wall Corrugated" },
 ];
 
 const Cardupvc = () => {
@@ -30,7 +27,7 @@ const Cardupvc = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Prima Roof"; // Tambahkan nama brand
+    const brandName = "Atap Alderon"; // Tambahkan nama brand
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -47,14 +44,14 @@ const Cardupvc = () => {
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/Primasupreme/logo.jpeg"
-            alt="Logo Prima Supreme"
+            src="/images/ALDERON/Alderon.png"
+            alt="Logo ALDERON"
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap Prima Roof</h4>
+            <h4 className="text-md font-semibold">Atap Alderon</h4>
             <p className="text-xs">
-              Atap Prima Roof berkualitas tinggi dengan daya tahan terhadap cuaca
+              Atap Alderon berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
@@ -90,7 +87,7 @@ const Cardupvc = () => {
 
         <div className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
-            href="/images/Brosur/Brosur Prima Roof.pdf"
+            href="/images/Brosur/Brosur Alderon.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >

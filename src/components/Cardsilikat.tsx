@@ -11,7 +11,7 @@ const products = [
   { id: 7, image: "/images/RBshera/Zedaryellow.jpg", name: "Zedar Shake Yellow Zante Mixed" },
 ];
 
-const Rbshera = () => {
+const Cardsilikat = () => {
   const [startIndex, setStartIndex] = useState(0);
   const itemsPerPage = 3;
 
@@ -38,19 +38,23 @@ const Rbshera = () => {
   };
 
   return (
-    <div className="font1 p-4">
+    <div className="font1 text-black p-4 relative mt-20">
+      <h2 className="text-xl font-bold text-center md:text-left">
+        Product Papan Silikat
+      </h2>
+
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
+        <div className="absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/RBshera/rbshera.png"
-            alt="Logo RBshera"
-            className="w-20 md:w-28 h-16"
+            alt="Logo RB Shera"
+            className="w-20 md:w-28 h-auto"
           />
           <div>
             <h4 className="text-md font-semibold">Atap RB Shera</h4>
             <p className="text-xs">
-              Atap RB Shera berkualitas tinggi dengan daya tahan terhadap cuaca
-              ekstrem.
+              Atap RB Shera berkualitas tinggi dengan daya tahan terhadap
+              cuaca ekstrem.
             </p>
           </div>
         </div>
@@ -71,7 +75,7 @@ const Rbshera = () => {
                       {product.name}
                     </h2>
                     <p className="text-gray-600 mb-4 group-hover:text-white">
-                      Atap tangguh dan stylish untuk hunian dan bangunan modern.
+                      Atap berkualitas tinggi untuk rumah dan bangunan modern.
                     </p>
                     <button
                       onClick={() => handleWhatsApp(product.name)}
@@ -113,4 +117,4 @@ const Rbshera = () => {
   );
 };
 
-export default Rbshera;
+export default Cardsilikat;

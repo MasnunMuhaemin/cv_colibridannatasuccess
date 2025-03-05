@@ -13,7 +13,7 @@ const images = [
   "/images/TAMCO/Tamco.png",
   "/images/TEGOLA/Tegola.png",
   "/images/VICTORY/Victory.png",
-  "/images/Primasupreme/logo.jpeg",
+  "/images/Primasupreme/logo.png",
   "/images/RBshera/rbshera.png",
   "/images/Robertson/logo.png",
   "/images/MATTAKA/logo.png",

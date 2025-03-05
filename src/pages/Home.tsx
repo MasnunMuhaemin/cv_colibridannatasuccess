@@ -16,13 +16,13 @@ import {
   Dragon,
   Landmark,
   Cardupvc,
-  Alderon,
   Ecoroof,
   Henda,
-  Rbshera,
   Robertson,
   Mattaka,
   Avantguard,
+  Cardmetal,
+  Cardsilikat
 } from "../components";
 
 const Home = () => {
@@ -45,13 +45,13 @@ const Home = () => {
       <Landmark />
       <Membran />
       <Cardupvc />
-      <Alderon />
       <Ecoroof />
       <Henda />
-      <Rbshera />
-      <Robertson />
       <Mattaka />
       <Avantguard />
+      <Cardmetal />
+      <Robertson />
+      <Cardsilikat />
       <Project />
       <Brand />
       <FAQ />
