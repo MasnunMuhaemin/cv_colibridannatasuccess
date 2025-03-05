@@ -104,7 +104,7 @@ const Content = () => {
               dan Jasa dan Kontraktor.
             </p>
             <h2 className="text-xl md:text-2xl font-semibold mb-2">Misi</h2>
-            <ul className="list-disc list-inside text-justify text-sm md:text-base">
+            <ul className="list-disc text-justify text-sm md:text-base">
               <li>
                 Memberikan dan menjaga komitmen untuk berkembang dan maju
                 bersama dengan mengutamakan kualitas dan pelayanan optimal
