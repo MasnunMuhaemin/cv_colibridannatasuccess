@@ -30,7 +30,7 @@ const Cardupvc = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Zincalume"; // Tambahkan nama brand
+    const brandName = "Atap Prima Roof"; // Tambahkan nama brand
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -41,14 +41,14 @@ const Cardupvc = () => {
   return (
     <div className="font1 text-black p-4 relative mt-20">
       <h2 className="text-xl font-bold text-center md:text-left">
-        Produk ATAP UPVC
+        Produk Atap UPVC
       </h2>
 
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/ZINCLAUME/Zincalume.jpg"
-            alt="Logo Zinclaume"
+            src="/images/Primasupreme/logo.jpeg"
+            alt="Logo Prima Supreme"
             className="w-20 md:w-28 h-auto"
           />
           <div>
@@ -89,13 +89,13 @@ const Cardupvc = () => {
         </div>
 
         <div className="absolute bottom-4 right-4 flex gap-2 items-center">
-          {/* <a
-            href="/images/Brosur/CTI.pdf"
+          <a
+            href="/images/Brosur/Brosur Prima Roof.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >
             Download Brosur
-          </a> */}
+          </a>
 
           <button
             onClick={prevSlide}

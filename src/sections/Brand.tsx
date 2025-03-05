@@ -13,7 +13,12 @@ const images = [
   "/images/TAMCO/Tamco.png",
   "/images/TEGOLA/Tegola.png",
   "/images/VICTORY/Victory.png",
-  "/images/ZINCLAUME/Zincalume.jpg",
+  "/images/Primasupreme/logo.jpeg",
+  "/images/RBshera/rbshera.png",
+  "/images/Robertson/logo.png",
+  "/images/MATTAKA/logo.png",
+  "/images/ALDERON/Alderon.png",
+  "/images/AVANTGUARD/logo.png",
 ];
 
 const Brand = () => {

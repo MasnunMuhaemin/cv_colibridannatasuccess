@@ -27,7 +27,7 @@ const Alderon = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Dragon"; // Tambahkan nama brand
+    const brandName = "Atap Alderon"; // Tambahkan nama brand
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -84,7 +84,7 @@ const Alderon = () => {
 
         <div className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
-            href="/images/Brosur/Brosur Dragon.pdf"
+            href="/images/Brosur/Brosur Alderon.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >

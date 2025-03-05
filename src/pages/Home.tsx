@@ -19,6 +19,10 @@ import {
   Alderon,
   Ecoroof,
   Henda,
+  Rbshera,
+  Robertson,
+  Mattaka,
+  Avantguard,
 } from "../components";
 
 const Home = () => {
@@ -44,6 +48,10 @@ const Home = () => {
       <Alderon />
       <Ecoroof />
       <Henda />
+      <Rbshera />
+      <Robertson />
+      <Mattaka />
+      <Avantguard />
       <Project />
       <Brand />
       <FAQ />

@@ -77,7 +77,7 @@ const Card = () => {
   return (
     <div id="produk" className="font1 text-black p-4">
       <h2 className="text-xl font-bold text-center md:text-left">
-        Produk ATAP BITUMEN
+        Produk Atap BITUMEN
       </h2>
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
