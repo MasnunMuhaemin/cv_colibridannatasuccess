@@ -40,7 +40,7 @@ const Cardsilikat = () => {
   return (
     <div className="font1 text-black p-4 relative mt-20">
       <h2 className="text-xl font-bold text-center md:text-left">
-        Product Papan Silikat
+        Produk Papan Silikat
       </h2>
 
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
