@@ -101,7 +101,7 @@ const Content = () => {
             <p className="text-justify mb-4 text-sm md:text-base">
               Menjadikan CV. COLIBRI DANNATA SUCCESS menjadi perusahaan yang
               maju dan berkembang dalam bidang usaha Perdagangan Umum, Supplier
-              dan Jasa dan Kontraktor.
+              dan Jasa dan juga Kontraktor.
             </p>
             <h2 className="text-xl md:text-2xl font-semibold mb-2">Misi</h2>
             <ul className="list-disc text-justify text-sm md:text-base">
