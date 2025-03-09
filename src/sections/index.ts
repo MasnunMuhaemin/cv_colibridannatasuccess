@@ -1,4 +1,4 @@
-export { default as Header } from "./Header"
+export { default as Hero } from "./Hero"
 export { default as Content } from "./Content"
 export { default as Brand } from "./Brand"
 export { default as FAQ } from "./FAQ"

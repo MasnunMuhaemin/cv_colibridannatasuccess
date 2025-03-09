@@ -1,10 +1,16 @@
 const Maps = () => {
   return (
-    <div id="lokasi" className="font1 text-black bg-gray-50 py-16 px-4 md:px-12 max-w-screen-xl mx-auto">
+    <section
+      id="lokasi"
+      className="font1 text-black bg-gray-50 py-16 px-4 md:px-12 max-w-screen-xl mx-auto"
+      aria-labelledby="maps-title"
+    >
       {/* Section Header */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-        Legalitas & Lokasi Kami
-      </h2>
+      <header className="text-center mb-8">
+        <h2 id="maps-title" className="text-2xl md:text-3xl font-bold">
+          Legalitas & Lokasi Kami
+        </h2>
+      </header>
 
       {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -18,14 +24,18 @@ const Maps = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Lokasi CV. Colibri Dannata Success di Google Maps"
+            aria-label="Peta lokasi CV. Colibri Dannata Success"
           ></iframe>
         </div>
 
         {/* Informasi Legalitas */}
-        <div className="bg-white p-6 rounded-lg">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">
-            Legalitas Perusahaan
-          </h3>
+        <article className="bg-white p-6 rounded-lg">
+          <header>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4">
+              Legalitas Perusahaan
+            </h3>
+          </header>
           <ul className="list-disc list-inside text-sm md:text-base space-y-2">
             <li>
               <span className="font-semibold">Nama Perusahaan:</span> CV.
@@ -42,14 +52,16 @@ const Maps = () => {
               <span className="font-semibold">NIB:</span> 2307240067076
             </li>
             <li>
-              <span className="font-semibold">Alamat:</span> Jl. Perintis
-              Kemerdekaan Komplek Pertokoan Pulomas Blok XII No.14 Pulogadung,
-              Jakarta Timur
+              <span className="font-semibold">Alamat:</span>
+              <address className="not-italic">
+                Jl. Perintis Kemerdekaan Komplek Pertokoan Pulomas Blok XII
+                No.14 Pulogadung, Jakarta Timur
+              </address>
             </li>
           </ul>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

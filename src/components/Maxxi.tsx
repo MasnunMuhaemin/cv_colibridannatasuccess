@@ -2,8 +2,16 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/Maxxi/1Tonesierragray.jpg", name: "1 Tone Sierra Gray" },
-  { id: 2, image: "/images/Maxxi/2ToneSierraGray.jpg", name: "2 Tone Sierra Gray" },
+  {
+    id: 1,
+    image: "/images/Maxxi/1Tonesierragray.jpg",
+    name: "1 Tone Sierra Gray",
+  },
+  {
+    id: 2,
+    image: "/images/Maxxi/2ToneSierraGray.jpg",
+    name: "2 Tone Sierra Gray",
+  },
   { id: 3, image: "/images/Maxxi/AshBrown.jpg", name: "Ash Brown" },
   { id: 4, image: "/images/Maxxi/DarkBlack.jpg", name: "Dark Black" },
   { id: 5, image: "/images/Maxxi/DarkBrown.jpg", name: "Dark Brown" },
@@ -30,36 +38,37 @@ const Maxxi = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Maxxi"; // Tambahkan nama brand
+    const brandName = "Atap Maxxi";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
+
   return (
-    <div className="font1 p-4">
+    <section className="font1 p-4">
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
+        <header className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/Maxxi/Maxxi.jpg"
             alt="Logo Maxxi"
             className="w-20 md:w-28 h-16"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap Maxxi</h4>
+            <h1 className="text-md font-semibold">Atap Maxxi</h1>
             <p className="text-xs">
               Atap Maxxi berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
-        </div>
+        </header>
 
         <div className="flex flex-col md:flex-row gap-4 w-full mt-20 justify-center">
           {products
             .slice(startIndex, startIndex + itemsPerPage)
             .map((product) => (
-              <div key={product.id} className="w-full md:w-1/3">
+              <article key={product.id} className="w-full md:w-1/3">
                 <div className="group border border-secondary rounded-lg overflow-hidden transition duration-300 ease-in-out hover:bg-secondary">
                   <img
                     src={product.image}
@@ -76,27 +85,21 @@ const Maxxi = () => {
                     <button
                       onClick={() => handleWhatsApp(product.name)}
                       className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+                      aria-label={`Beli ${product.name} melalui WhatsApp`}
                     >
                       Beli Sekarang
                     </button>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
-          {/* <a
-            href="/images/Brosur/CTI.pdf"
-            download
-            className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
-          >
-            Download Brosur
-          </a> */}
-
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <button
             onClick={prevSlide}
             className="p-3 text-white bg-secondary/75 rounded-full hover:bg-secondary/95 shadow-md"
+            aria-label="Slide sebelumnya"
           >
             <IconChevronLeft size={30} />
           </button>
@@ -104,12 +107,13 @@ const Maxxi = () => {
           <button
             onClick={nextSlide}
             className="p-3 text-white bg-secondary/75 rounded-full hover:bg-secondary/95 shadow-md"
+            aria-label="Slide berikutnya"
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
+        </nav>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -27,7 +27,11 @@ const products = [
     image: "/images/GEMSTONE/3tabasphaltshingle/Mixedharborblue.jpg",
     name: "3 Tab Asphalt Shingle Mixed Harbor Blue",
   },
-  { id: 6, image: "/images/GEMSTONE/3tabasphaltshingle/Mixedmahogany.jpg", name: "Mixed Mahogany" },
+  {
+    id: 6,
+    image: "/images/GEMSTONE/3tabasphaltshingle/Mixedmahogany.jpg",
+    name: "Mixed Mahogany",
+  },
   {
     id: 7,
     image: "/images/GEMSTONE/3tabasphaltshingle/Mixedonyxblack.jpg",
@@ -121,9 +125,9 @@ const Gemstone = () => {
     );
   };
   return (
-    <div className="font1 p-4">
-      <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
+    <section className="font1 p-4">
+      <article className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
+        <header className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/GEMSTONE/Gemstone.jpg"
             alt="Logo Gemstone"
@@ -136,13 +140,13 @@ const Gemstone = () => {
               ekstrem.
             </p>
           </div>
-        </div>
+        </header>
 
         <div className="flex flex-col md:flex-row gap-4 w-full mt-20 justify-center">
           {products
             .slice(startIndex, startIndex + itemsPerPage)
             .map((product) => (
-              <div key={product.id} className="w-full md:w-1/3">
+              <article key={product.id} className="w-full md:w-1/3">
                 <div className="group border border-secondary rounded-lg overflow-hidden transition duration-300 ease-in-out hover:bg-secondary">
                   <img
                     src={product.image}
@@ -164,11 +168,11 @@ const Gemstone = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur Gemstone.pdf"
             download
@@ -190,9 +194,9 @@ const Gemstone = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </article>
+    </section>
   );
 };
 

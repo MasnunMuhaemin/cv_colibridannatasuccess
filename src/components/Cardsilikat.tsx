@@ -2,13 +2,41 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/RBshera/onepluscassia.jpg", name: "Roof Eaves One Puls Cassia Uncolored" },
-  { id: 2, image: "/images/RBshera/smoothcoralwhite.jpg", name: "Roof Eaves Pro Smooth Coral White" },
-  { id: 3, image: "/images/RBshera/smoothhoneyteakbrown.jpg", name: "Roof Eaves Pro Smooth Honey Teak Brown" },
-  { id: 4, image: "/images/RBshera/Zedarblack.jpg", name: "Zedar Black Wenge Mixed" },
-  { id: 5, image: "/images/RBshera/Zedarbrown.jpg", name: "Zedar Shake Brown Chesnut Mixed" },
-  { id: 6, image: "/images/RBshera/Zedarmetrogrey.jpg", name: "Zedar Shake Metro Grey Mixed" },
-  { id: 7, image: "/images/RBshera/Zedaryellow.jpg", name: "Zedar Shake Yellow Zante Mixed" },
+  {
+    id: 1,
+    image: "/images/RBshera/onepluscassia.jpg",
+    name: "Roof Eaves One Puls Cassia Uncolored",
+  },
+  {
+    id: 2,
+    image: "/images/RBshera/smoothcoralwhite.jpg",
+    name: "Roof Eaves Pro Smooth Coral White",
+  },
+  {
+    id: 3,
+    image: "/images/RBshera/smoothhoneyteakbrown.jpg",
+    name: "Roof Eaves Pro Smooth Honey Teak Brown",
+  },
+  {
+    id: 4,
+    image: "/images/RBshera/Zedarblack.jpg",
+    name: "Zedar Black Wenge Mixed",
+  },
+  {
+    id: 5,
+    image: "/images/RBshera/Zedarbrown.jpg",
+    name: "Zedar Shake Brown Chesnut Mixed",
+  },
+  {
+    id: 6,
+    image: "/images/RBshera/Zedarmetrogrey.jpg",
+    name: "Zedar Shake Metro Grey Mixed",
+  },
+  {
+    id: 7,
+    image: "/images/RBshera/Zedaryellow.jpg",
+    name: "Zedar Shake Yellow Zante Mixed",
+  },
 ];
 
 const Cardsilikat = () => {
@@ -29,7 +57,7 @@ const Cardsilikat = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap RB Shera"; // Tambahkan nama brand
+    const brandName = "Atap RB Shera";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -38,32 +66,32 @@ const Cardsilikat = () => {
   };
 
   return (
-    <div className="font1 text-black p-4 relative mt-20">
-      <h2 className="text-xl font-bold text-center md:text-left">
+    <section className="font1 text-black p-4 relative mt-20">
+      <header className="text-xl font-bold text-center md:text-left">
         Produk Papan Silikat
-      </h2>
+      </header>
 
-      <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="absolute left-4 top-4 flex items-start space-x-4">
+      <article className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
+        <header className="absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/RBshera/rbshera.png"
             alt="Logo RB Shera"
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap RB Shera</h4>
+            <h2 className="text-md font-semibold">Atap RB Shera</h2>
             <p className="text-xs">
-              Atap RB Shera berkualitas tinggi dengan daya tahan terhadap
-              cuaca ekstrem.
+              Atap RB Shera berkualitas tinggi dengan daya tahan terhadap cuaca
+              ekstrem.
             </p>
           </div>
-        </div>
+        </header>
 
         <div className="flex flex-col md:flex-row gap-4 w-full mt-20 justify-center">
           {products
             .slice(startIndex, startIndex + itemsPerPage)
             .map((product) => (
-              <div key={product.id} className="w-full md:w-1/3">
+              <article key={product.id} className="w-full md:w-1/3">
                 <div className="group border border-secondary rounded-lg overflow-hidden transition duration-300 ease-in-out hover:bg-secondary">
                   <img
                     src={product.image}
@@ -71,9 +99,9 @@ const Cardsilikat = () => {
                     className="w-full h-48 md:h-64 object-cover object-center"
                   />
                   <div className="p-4 flex flex-col justify-between h-full group-hover:text-white">
-                    <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
+                    <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
                       {product.name}
-                    </h2>
+                    </h3>
                     <p className="text-gray-600 mb-4 group-hover:text-white">
                       Atap berkualitas tinggi untuk rumah dan bangunan modern.
                     </p>
@@ -85,11 +113,11 @@ const Cardsilikat = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur RB Shera.pdf"
             download
@@ -111,9 +139,9 @@ const Cardsilikat = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </article>
+    </section>
   );
 };
 

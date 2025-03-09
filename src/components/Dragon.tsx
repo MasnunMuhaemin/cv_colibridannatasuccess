@@ -28,36 +28,37 @@ const Dragon = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Dragon"; // Tambahkan nama brand
+    const brandName = "Atap Dragon";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
+
   return (
-    <div className="font1 p-4">
-      <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
+    <section className="font1 p-4">
+      <article className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
+        <header className="text-black absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/DRAGON/Dragon.png"
             alt="Logo DRAGON"
             className="w-20 md:w-28 h-16"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap Dragon</h4>
+            <h1 className="text-md font-semibold">Atap Dragon</h1>
             <p className="text-xs">
               Atap Dragon berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
-        </div>
+        </header>
 
         <div className="flex flex-col md:flex-row gap-4 w-full mt-20 justify-center">
           {products
             .slice(startIndex, startIndex + itemsPerPage)
             .map((product) => (
-              <div key={product.id} className="w-full md:w-1/3">
+              <article key={product.id} className="w-full md:w-1/3">
                 <div className="group border border-secondary rounded-lg overflow-hidden transition duration-300 ease-in-out hover:bg-secondary">
                   <img
                     src={product.image}
@@ -79,11 +80,11 @@ const Dragon = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur Dragon.pdf"
             download
@@ -105,9 +106,9 @@ const Dragon = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </article>
+    </section>
   );
 };
 

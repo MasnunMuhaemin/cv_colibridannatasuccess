@@ -30,17 +30,17 @@ const products = [
   {
     id: 6,
     image: "/images/GAF/Timberline/Charcoal.jpg",
-    name: "Timberline Slate",
+    name: "Timberline Charcoal",
   },
   {
     id: 7,
     image: "/images/GAF/Timberline/Hickory.jpg",
-    name: "Timberline Slate",
+    name: "Timberline Hickory",
   },
   {
     id: 8,
     image: "/images/GAF/Timberline/Shakewood.jpg",
-    name: "Timberline Slate",
+    name: "Timberline Shakewood",
   },
   {
     id: 9,
@@ -67,49 +67,56 @@ const Card = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap GAF"; // Tambahkan nama brand
+    const brandName = "Atap GAF";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
+
   return (
-    <div id="produk" className="font1 text-black p-4">
+    <section id="produk" className="font1 text-black p-4">
       <h2 className="text-xl font-bold text-center md:text-left">
         Produk Atap BITUMEN
       </h2>
+
       <div className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
-        <div className="text-black absolute left-4 top-4 flex items-start space-x-4">
+        {/* Informasi Produk */}
+        <header className="absolute left-4 top-4 flex items-start space-x-4">
           <img
             src="/images/GAF/GAF.png"
             alt="Logo GAF"
             className="w-20 md:w-28 h-16"
           />
           <div>
-            <h4 className="text-md font-semibold">Atap GAF</h4>
+            <h3 className="text-md font-semibold">Atap GAF</h3>
             <p className="text-xs">
               Atap GAF berkualitas tinggi dengan daya tahan terhadap cuaca
               ekstrem.
             </p>
           </div>
-        </div>
+        </header>
 
+        {/* Daftar Produk */}
         <div className="flex flex-col md:flex-row gap-4 w-full mt-20 justify-center">
           {products
             .slice(startIndex, startIndex + itemsPerPage)
             .map((product) => (
-              <div key={product.id} className="w-full md:w-1/3">
+              <article key={product.id} className="w-full md:w-1/3">
                 <div className="group border border-secondary rounded-lg overflow-hidden transition duration-300 ease-in-out hover:bg-secondary">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-48 md:h-64 object-cover object-center"
-                  />
+                  <figure>
+                    <img
+                      src={product.image}
+                      alt={`Gambar produk ${product.name}`}
+                      className="w-full h-48 md:h-64 object-cover object-center"
+                    />
+                    <figcaption className="sr-only">{product.name}</figcaption>
+                  </figure>
                   <div className="p-4 flex flex-col justify-between h-full group-hover:text-white">
-                    <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
+                    <h4 className="text-lg md:text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
                       {product.name}
-                    </h2>
+                    </h4>
                     <p className="text-gray-600 mb-4 group-hover:text-white">
                       Atap tangguh dan stylish untuk hunian dan bangunan modern.
                     </p>
@@ -121,11 +128,12 @@ const Card = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        {/* Navigasi dan Brosur */}
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur GAF1.pdf"
             download
@@ -136,6 +144,7 @@ const Card = () => {
 
           <button
             onClick={prevSlide}
+            aria-label="Produk sebelumnya"
             className="p-3 text-white bg-secondary/75 rounded-full hover:bg-secondary/95 shadow-md"
           >
             <IconChevronLeft size={30} />
@@ -143,13 +152,14 @@ const Card = () => {
 
           <button
             onClick={nextSlide}
+            aria-label="Produk berikutnya"
             className="p-3 text-white bg-secondary/75 rounded-full hover:bg-secondary/95 shadow-md"
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
+        </nav>
       </div>
-    </div>
+    </section>
   );
 };
 

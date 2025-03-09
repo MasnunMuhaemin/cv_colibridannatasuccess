@@ -4,7 +4,7 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 const products = [
   { id: 1, image: "/images/Landmark/Darkbrown.jpg", name: "Dark Brown" },
   { id: 2, image: "/images/Landmark/Darkgrey.jpg", name: "Dark Grey" },
-  { id: 3, image: "/images/Landmark/Grey.jpg", name: "Grey" }
+  { id: 3, image: "/images/Landmark/Grey.jpg", name: "Grey" },
 ];
 
 const Landmark = () => {
@@ -25,7 +25,7 @@ const Landmark = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Landmark"; // Tambahkan nama brand
+    const brandName = "Atap Landmark";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -81,7 +81,7 @@ const Landmark = () => {
             ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 flex gap-2 items-center">
+        <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
             href="/images/Brosur/Brosur GAF1.pdf"
             download
@@ -103,7 +103,7 @@ const Landmark = () => {
           >
             <IconChevronRight size={30} />
           </button>
-        </div>
+        </nav>
       </div>
     </div>
   );
