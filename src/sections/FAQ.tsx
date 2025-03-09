@@ -30,7 +30,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="bg-gray-50 py-16 px-5 md:px-10">
+    <section id="faq" className="bg-gray-50 py-16 px-5 md:px-10 font1">
       <div className="text-black font1 max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Bagian Artikel (Kiri) */}
         <div className="max-w-md">

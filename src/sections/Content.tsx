@@ -40,7 +40,7 @@ const Content = () => {
 
         {/* Layout Utama */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
-          {/* Informasi Perusahaan */}
+          {/* Kiri: Informasi Perusahaan */}
           <article className="bg-white p-8 shadow-lg rounded-xl w-full">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Tentang Kami</h2>
             <p className="leading-relaxed text-sm md:text-base">
@@ -53,6 +53,7 @@ const Content = () => {
               Atap Baja Ringan dan Waterproofing yang mendukung pembangunan di
               Indonesia.
             </p>
+            {/* Highlight Box */}
             <blockquote className="mt-6 p-4 bg-blue-100 border-l-4 border-secondary rounded">
               <p className="text-secondary font-medium text-sm md:text-base">
                 “Kami berkomitmen memberikan solusi terbaik untuk konstruksi
@@ -61,60 +62,62 @@ const Content = () => {
             </blockquote>
           </article>
 
-          {/* Layanan Kami */}
+          {/* Kanan: Layanan */}
           <section className="text-black space-y-6 w-full">
             <h2 className="text-xl md:text-2xl font-bold">Layanan Kami</h2>
-            <div className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full">
-              <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
-                <IconHome stroke={2} />
+            {[
+              {
+                icon: <IconHome stroke={2} />,
+                text: "Jasa pekerjaan Roofing dan Waterproofing",
+              },
+              {
+                icon: <IconCrane stroke={2} />,
+                text: "Pemasangan Rangka Baja Berat dan Rangka Baja Ringan",
+              },
+              {
+                icon: <IconBuildings stroke={2} />,
+                text: "Distributor / Supplier Atap",
+              },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full"
+              >
+                <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
+                  {service.icon}
+                </div>
+                <p className="text-sm md:text-lg">{service.text}</p>
               </div>
-              <p className="text-sm md:text-lg">
-                Jasa pekerjaan Roofing dan Waterproofing
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full">
-              <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
-                <IconCrane stroke={2} />
-              </div>
-              <p className="text-sm md:text-lg">
-                Pemasangan Rangka Baja Berat dan Rangka Baja Ringan
-              </p>
-            </div>
-            <div className="bg-white p-6 shadow-lg rounded-lg flex items-center space-x-4 hover:shadow-xl transition w-full">
-              <div className="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full">
-                <IconBuildings stroke={2} />
-              </div>
-              <p className="text-sm md:text-lg">Distributor / Supplier Atap</p>
-            </div>
+            ))}
           </section>
         </div>
 
         {/* Visi & Misi */}
-        <section className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
-          <article>
-            <h1 className="text-2xl md:text-3xl font-bold mb-6 text-left">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+          {/* Teks Visi & Misi */}
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-left">
               Tujuan
-            </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-2">Visi</h2>
+            </h2>
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Visi</h3>
             <p className="text-justify mb-4 text-sm md:text-base">
               Menjadikan CV. COLIBRI DANNATA SUCCESS menjadi perusahaan yang
-              maju dan berkembang dalam bidang usaha Perdagangan Umum, Supplier,
-              dan Jasa serta Kontraktor.
+              maju dan berkembang dalam bidang usaha Perdagangan Umum, Supplier
+              dan Jasa dan juga Kontraktor.
             </p>
-            <h2 className="text-xl md:text-2xl font-semibold mb-2">Misi</h2>
-            <ul className="list-disc text-justify text-sm md:text-base">
-              <li>
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Misi</h3>
+            <ul className="list-disc text-sm md:text-base pl-5">
+              <li className="text-justify">
                 Memberikan dan menjaga komitmen untuk berkembang dan maju
                 bersama dengan mengutamakan kualitas dan pelayanan optimal
-                kepada para rekanan, klien, dan mitra bisnis.
+                kepada para rekanan, klien dan mitra bisnis.
               </li>
               <li>
-                Memberikan kesejahteraan bagi karyawan, pemilik, serta untuk
+                Memberikan kesejahteraan bagi karyawan, Pemilik serta untuk
                 pengembangan usaha.
               </li>
             </ul>
-          </article>
-
+          </section>
           {/* Gambar dengan Navigasi */}
           <figure className="flex justify-center relative">
             <button
@@ -126,7 +129,7 @@ const Content = () => {
             <img
               className="rounded-lg"
               src={images[currentImage]}
-              alt="Gambar perusahaan"
+              alt="Galeri Kantor"
             />
             <button
               onClick={nextImage}
@@ -135,6 +138,31 @@ const Content = () => {
               <IconChevronRight stroke={2} />
             </button>
           </figure>
+        </div>
+
+        {/* Human Capital */}
+        <section className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Gambar */}
+          <figure className="flex justify-center">
+            <img
+              className="rounded-lg"
+              src="/images/Galeri/human.png"
+              alt="Human Capital"
+            />
+          </figure>
+          {/* Teks Human Capital */}
+          <div className="flex flex-col space-y-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-right">
+              Human Capital
+            </h2>
+            <p className="text-justify text-sm md:text-base">
+              Kami percaya bahwa sumber daya manusia yang berkualitas adalah
+              aset terbesar perusahaan. Oleh karena itu, kami selalu berusaha
+              menciptakan lingkungan kerja yang kondusif, meningkatkan
+              keterampilan karyawan, dan memberikan kesempatan bagi mereka untuk
+              berkembang bersama perusahaan.
+            </p>
+          </div>
         </section>
       </div>
     </section>
