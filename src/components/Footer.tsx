@@ -77,7 +77,8 @@ const Footer = () => {
           </ul>
         </nav>
 
-        <address className="lg:col-span-2 md:col-span-1 col-span-2 md:text-left text-center pt-5 not-italic">
+        {/* Kontak Kami */}
+        <address className="md:col-span-2 col-span-2 md:text-left text-center pt-5 not-italic">
           <h5 className="text-xl font-semibold mb-5">Kontak Kami</h5>
           <p className="flex gap-4 mb-3 md:justify-start justify-center">
             <IconPhone className="w-5 h-5 text-white" /> 082123572533
@@ -86,9 +87,8 @@ const Footer = () => {
             <IconMail className="w-5 h-5 text-white" />{" "}
             cv.colibridannatasuces@gmail.com
           </p>
-        </address>
 
-        <section className="lg:col-span-2 md:col-span-1 col-span-2 md:text-left text-center pt-5">
+          {/* Sosial Media */}
           <h5 className="text-xl font-semibold mt-5">Sosial Media</h5>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-3">
             <a
@@ -122,8 +122,36 @@ const Footer = () => {
                 Colibri.Dannata_Success
               </span>
             </a>
+            <a
+              href="https://www.tokopedia.com/colibri-dannata-success"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <img
+                src="/images/Galeri/tokopedia.png"
+                alt="Tokopedia"
+                className="w-6 h-6 object-contain"
+              />
+              <span className="text-green-500 font-medium">
+                Atap Bitumen Murah Bekasi
+              </span>
+            </a>
+            <a
+              href="https://www.olx.co.id/profile/colibri-dannata-success"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <img
+                src="/images/Galeri/olx.png"
+                alt="OLX"
+                className="w-6 h-6 object-contain"
+              />
+              <span className="text-purple-600 font-medium">Atap Bitumen Murah Jakarta Timur</span>
+            </a>
           </div>
-        </section>
+        </address>
       </section>
 
       <section className="text-center border-t-2 py-5 border-white mt-5">
