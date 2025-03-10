@@ -2,11 +2,24 @@ import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 
 const products = [
-  { id: 1, image: "/images/ALDERON/Alderonaksesoris.jpg", name: "Aksesoris Wather Seal & NOK" },
-  { id: 2, image: "/images/ALDERON/Alderoncorugatted.jpg", name: "Alderon Twin Wall Corrugated" },
-  { id: 3, image: "/images/ALDERON/Alderoneco.jpg", name: "Alderon Eco" },
-  { id: 4, image: "/images/ALDERON/Alderonsingle.jpg", name: "Alderon RS Single Wall Corrugated" },
-  { id: 5, image: "/images/ALDERON/Alderontwin.jpg", name: "Alderon Lite Twin Wall Corrugated" },
+  { id: 1, image: "/images/CTI/blackct5.jpg", name: "Black CT 5" },
+  { id: 2, image: "/images/CTI/blackct6.jpg", name: "Black CT 6" },
+  { id: 3, image: "/images/CTI/blacksolid.jpg", name: "Black Solid" },
+  { id: 4, image: "/images/CTI/charcoalgrey.jpg", name: "Charcoal Grey" },
+  { id: 5, image: "/images/CTI/coffebrownct5.jpg", name: "Coffe Brown CT 5" },
+  { id: 6, image: "/images/CTI/darkbrown.jpg", name: "Dark Brown" },
+  { id: 7, image: "/images/CTI/darkbrownct5.jpg", name: "Dark Brown CT 5" },
+  { id: 8, image: "/images/CTI/darkbrownct6.jpg", name: "Dark Brown CT 6" },
+  { id: 9, image: "/images/CTI/darkgreyct3.jpg", name: "Dark Grey CT 3" },
+  { id: 10, image: "/images/CTI/darkgreyct5.jpg", name: "Dark Grey CT 5" },
+  { id: 11, image: "/images/CTI/darkgreyct6.jpg", name: "Dark Grey CT 6" },
+  { id: 12, image: "/images/CTI/goldct5.jpg", name: "Gold CT 5" },
+  { id: 13, image: "/images/CTI/goldct6.jpg", name: "GOld CT 6" },
+  { id: 14, image: "/images/CTI/greenct5.jpg", name: "Green CT 5" },
+  { id: 15, image: "/images/CTI/greenct6.jpg", name: "Green CT 6" },
+  { id: 16, image: "/images/CTI/midnightct3.jpg", name: "Midnight CT 3" },
+  { id: 17, image: "/images/CTI/redct5.jpg", name: "Red CT 5" },
+  { id: 18, image: "/images/CTI/redct6.jpg", name: "Red CT 6" },
 ];
 
 const Cardupvc = () => {
@@ -27,7 +40,7 @@ const Cardupvc = () => {
 
   const handleWhatsApp = (productName: string): void => {
     const phone = "+6282123572533";
-    const brandName = "Atap Alderon";
+    const brandName = "Atap CTI";
     const message = `Halo, saya ingin mengetahui produk ini lebih lanjut... ${brandName} - ${productName}.`;
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -36,22 +49,18 @@ const Cardupvc = () => {
   };
 
   return (
-    <section className="font1 text-black p-4 relative mt-20">
-      <header className="text-center md:text-left">
-        <h2 className="text-xl font-bold">Produk Atap UPVC</h2>
-      </header>
-
+    <section className="font1 text-black p-4 relative">
       <section className="border border-secondary rounded-lg p-4 mt-2 pb-20 relative">
         <header className="absolute left-4 top-4 flex items-start space-x-4">
           <img
-            src="/images/ALDERON/Alderon.png"
-            alt="Logo ALDERON"
+            src="/images/CTI/logo.png"
+            alt="Logo CTI"
             className="w-20 md:w-28 h-auto"
           />
           <div>
-            <h3 className="text-md font-semibold">Atap Alderon</h3>
+            <h3 className="text-md font-semibold">Atap CTI</h3>
             <p className="text-xs">
-              Atap Alderon berkualitas tinggi dengan daya tahan terhadap cuaca ekstrem.
+              Atap CTI berkualitas tinggi dengan daya tahan terhadap cuaca ekstrem.
             </p>
           </div>
         </header>
@@ -86,7 +95,7 @@ const Cardupvc = () => {
 
         <nav className="absolute bottom-4 right-4 flex gap-2 items-center">
           <a
-            href="/images/Brosur/Brosur Alderon.pdf"
+            href="/images/Brosur/Brosur CTI.pdf"
             download
             className="bg-secondary/75 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary/100 hover:shadow-lg transition duration-300"
           >
